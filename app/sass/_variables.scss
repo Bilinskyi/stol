@@ -1,0 +1,36 @@
+$normal: 14px;
+
+$font: 'Conv_8292';
+$f: 'Conv_Kundera Reg';
+$normal: 'Conv_Solomon Sans Normal';
+$ni: 'Conv_Solomon Sans Normal Italic';
+$book: 'Conv_Solomon Sans Book';
+$bi: 'Conv_Solomon Sans Book Italic';
+$semi: 'Conv_Solomon Sans SemiBold';
+
+
+$bp-xxx-large:   "only screen and (max-width : 1500px)";
+$bp-xx-large:   "only screen and (min-width : 1630px)";
+$bp-x-large:    "only screen and (min-width : 1201px)";
+$min-s:    "only screen and (min-width : 768px)";
+
+$bp-blarge:      "only screen and (max-width : 1629px)";
+$bp-large:      "only screen and (max-width : 1199px)";
+$bp-medium:     "only screen and (max-width : 991px)";
+$bp-small:      "only screen and (max-width : 767px)";
+$bp-smm:      "only screen and (max-width : 550px)";
+$bp-xsmall:    "only screen and (max-width : 479px)";
+$bp-xxsmall:    "only screen and (max-width : 320px)";
+
+
+// ul {
+	// @media #{$bp-small} {
+	// 	width: 100%;
+	// }
+// }
+
+// ul {  
+//   @include respond-to(desktope) {
+//     width: 400%;
+//   }
+// }

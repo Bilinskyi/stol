@@ -1,0 +1,69 @@
+::-webkit-input-placeholder {color: #4a4a4a;font-size: 16px;font-family: $normal;}
+::-moz-placeholder {color: #4a4a4a;font-size: 16px;font-family: $normal;}
+:-moz-placeholder {color: #4a4a4a;font-size: 16px;font-family: $normal;}
+:-ms-input-placeholder {color: #4a4a4a;font-size: 16px;font-family: $normal;}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.hide-b {
+  display: none;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.inline-center{text-align: center;}
+.text-l{text-align: left;}
+.text-r{text-align: right;}
+.right{float: right!important;}
+.left{float: left!important;}
+.clearfix:before, .clearfix:after {content: "";display: table;}
+.clearfix:after {clear: both;}
+.wrapper:before, .wrapper:after{content: ''; display: table;}
+.wrapper:after {clear: both;}
+.flow-hidden {overflow: hidden}
+body {
+  // min-width: 1900px;
+  // max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; 
+  color: #fff;
+  font-family: $normal;
+}
+
+
+.center {
+  text-align: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+
+.justify-c {
+  font-size: 1px;
+  text-align: justify;
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    
+  }
+}
+
+.center-y {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

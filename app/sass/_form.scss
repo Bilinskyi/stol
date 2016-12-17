@@ -1,0 +1,86 @@
+input:not([type=submit]) {
+
+}
+
+.button {
+	display: inline-block;
+	outline: none;
+	border: none;
+	padding: 0;  
+	height: 59px;
+	line-height: 59px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #bd9e78;
+	display: inline-block;
+	color: white;
+	font-size: 14px;
+	letter-spacing: 1.23px;
+	font-family: $normal;
+	text-transform: uppercase;
+}
+
+[type=submit] {
+	
+	&:hover {
+		cursor: pointer;
+	}
+	&:active {
+		transform: translateY(1px);
+	}
+}
+input.error {
+	border: 1px solid red !important;
+}
+
+
+.form-all {
+	width: 427px;
+	background: rgba(255,255,255, .9);
+	text-align: left;
+	padding: 40px;
+	.button {
+		width: 100%;
+	}
+	&.form-header {
+		padding-bottom: 100px;
+		padding-top: 60px;
+		float: right;
+	}
+	.form-title {
+		color: #3d3d3d;
+		font-size: 33px;
+		letter-spacing: 5.74px;
+		line-height: 42px;
+		font-family: $f;
+		text-transform: uppercase;
+	}
+	.form-sm {
+		color: #3d3d3d;
+		font-size: 18px;
+		line-height: 22px;
+		font-family: $book;
+
+		margin: 23px 0 35px;
+	}
+	.note {
+		color: #3d3d3d;
+		font-size: 15px;
+		line-height: 18px;
+		font-family: $book;
+		margin-top: 23px;
+	}
+	input {
+		width: 100%;
+		display: inline-block;
+		padding-left: 30px;
+		height: 58px;
+		background-color: white;
+		border: 1px solid #e2e2e2;
+		outline: none;
+		margin-bottom: 20px;
+		font-family: $normal;
+		color: #4a4a4a;
+		font-size: 16px;
+	}
+}
