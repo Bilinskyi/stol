@@ -16,7 +16,7 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
+	margin: 0;
 	padding: 0;
 	*zoom: 1;
 }
@@ -103,10 +103,12 @@
 	/*background: url(../img/controls.png) no-repeat 0 -32px;*/
 }
 .bx-prev i {
-	text-shadow: -2px 2px 9px rgba(0, 0, 0, .5);
+	/*text-shadow: -2px 2px 9px rgba(0, 0, 0, .5);*/
+	color: rgb(209, 179, 140);
 }
 .bx-next i {
-	text-shadow: 2px 2px 9px rgba(0, 0, 0, .5);
+	/*text-shadow: 2px 2px 9px rgba(0, 0, 0, .5);*/
+	color: rgb(209, 179, 140);
 }
 
 .bx-wrapper .bx-next {
@@ -134,14 +136,21 @@
 
 .bx-wrapper .bx-controls-direction a i {
 	display: inline-block;
-	position: relative;
-	top: 50%;
-	color: #fff;
-	font-size: 25px;
-	-webkit-transform: translateY(-50%);
-	    -ms-transform: translateY(-50%);
-	        transform: translateY(-50%);
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	color: rgb(209, 179, 140);
+	font-size: 15px;
+	
 }
+.bx-wrapper .bx-controls-direction a i:before {
+	line-height: 34px;
+}
+
+
 
 
 .bx-wrapper .bx-controls-direction a.disabled {

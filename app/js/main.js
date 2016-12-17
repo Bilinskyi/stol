@@ -77,6 +77,12 @@ $(document).ready(function(){
 
 
 
+
+
+
+
+
+
 // $('#slider-1').bxSlider({
 // 		controls: true, 
 // 		pager: false,
@@ -141,5 +147,105 @@ $('input,textarea').focus(function(){
 }).blur(function(){
  $(this).attr('placeholder',$(this).data('placeholder'));
 });
+
+
+
+
+$('.bx-slider-2').bxSlider({
+  mode: 'fade',
+  pager: true,
+  controls: false
+});
+
+
+
+
+
+
+function slider_init_number($slider, $DOMslider, $pageNumber, $prev, $next) {
+
+  var $slider = $($DOMslider).bxSlider({
+    onSlideAfter: function($slideElement, oldIndex, newIndex){ 
+      var currenItem = $slider.getCurrentSlide()+1;
+      var slideQty = $slider.getSlideCount();
+      $($pageNumber).html(currenItem + '<em>/'+slideQty +'</em> '); 
+    }
+  });
+
+
+  $($prev).on('click', function(e) {
+   e.preventDefault(); 
+   $slider.goToPrevSlide(); 
+ });
+
+  $($next).on('click', function(e) {
+   e.preventDefault(); 
+   $slider.goToNextSlide(); 
+ });
+
+  var cur1 = $slider.getCurrentSlide()+1;
+  var count1 = $slider.getSlideCount();
+  $($pageNumber).html(cur1 + '<em>/'+count1 +'</em> ');
+
+};
+
+
+slider_init_number('s1', '.num-1', '.pages-2', '.num-1 .prev', '.num-1 .next');
+slider_init_number('s2', '.num-2', '.pages-3', '.num-2 .prev', '.num-2 .next');
+
+// var s1 = $('.num-1').bxSlider({
+
+//   onSlideAfter: function($slideElement, oldIndex, newIndex){ 
+//     console.log('rrr');
+//     var currenItem = s1.getCurrentSlide()+1;
+//     var slideQty = s1.getSlideCount();
+//     $('.pages-2').html(currenItem + '<em>/'+slideQty +'</em> '); 
+//   }
+
+// });
+
+
+
+
+
+
+$(window).on('load', function() {
+
+ var slider1 = $('.bx-slider-1').bxSlider({
+  nextText: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+  onSlideAfter: function($slideElement, oldIndex, newIndex){ 
+   var currenItem = slider1.getCurrentSlide()+1;
+   var slideQty = slider1.getSlideCount();
+   $('.pages-1').html(currenItem + '<em>/'+slideQty +'</em> '); 
+ },
+ prevText: '<i class="fa fa-chevron-left" aria-hidden="true"></i>'
+}); 
+
+
+
+
+ $('h5').on('click', function(e) {
+   e.preventDefault(); 
+   slider1.goToNextSlide();
+ });
+ $('h2').on('click', function(e) {
+   e.preventDefault(); 
+   slider1.goToPrevSlide();
+ });
+
+
+
+
+ var currenItem = slider1.getCurrentSlide()+1;
+ var slideQty = slider1.getSlideCount();
+ $('.pages-1').html(currenItem + '<em>/'+slideQty +'</em> ');
+
+
+
+
+});
+
+
+
 
 });
