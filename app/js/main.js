@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-  $('.m-h-1, .m-h-2').matchHeight();
+  $('.m-h-1, .m-h-2, .top-photo .photo-box, .bottom-photo .photo-box, .map-height > div, .last-mh > div').matchHeight();
 
   $('.open-r').on('click', 'li:not(.active)', function(e) {
    e.preventDefault(); 
@@ -43,10 +43,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
   $(document).on('click', '.margin-sl:not(.active)', function(e) {
    e.preventDefault(); 
    var ttt = $(this);
@@ -78,48 +74,13 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-// $('#slider-1').bxSlider({
-// 		controls: true, 
-// 		pager: false,
-// 		slideWidth: 940,
-// 		minSlides: 4,
-// 		maxSlides: 4,
-// 		moveSlides: 1
-// 	});
-
-// $("#owl-demo").owlCarousel({
-//       navigation : true, // Show next and prev buttons
-//       slideSpeed : 300,
-//       paginationSpeed : 400,
-//       singleItem: false,
-//       items: 4,
-//       pagination : true,
-//       itemsDesktop : [1920,4],
-//       navigationText: false,
-//       // autoPlay: 20000,
-//       // "singleItem:true" is a shortcut for:
-//       // items : 1, 
-//       // itemsDesktop : false,
-//       // itemsDesktopSmall : false,
-//       // itemsTablet: false,
-//       // itemsMobile : false
-//     mouseDrag : false,
-//     touchDrag : false
-
-//   });  
-
- //    $("a.modal-form").fancybox({
- //       'hideOnContentClick': true,
- //          minWidth : 230,
- //          padding : 0,
- //          closeBtn : true
+$("a.modal-form").fancybox({
+ 'hideOnContentClick': true,
+ minWidth : 230,
+ padding : 0,
+ closeBtn : true
  
- // });
+});
 
 // $('header a[href^="#"]').on('click', function(event) {
 
@@ -149,8 +110,6 @@ $('input,textarea').focus(function(){
 });
 
 
-
-
 $('.bx-slider-2').bxSlider({
   mode: 'fade',
   pager: true,
@@ -159,12 +118,11 @@ $('.bx-slider-2').bxSlider({
 
 
 
-
-
-
-function slider_init_number($slider, $DOMslider, $pageNumber, $prev, $next) {
+function slider_init_number($slider, $DOMslider, $pager, $pageNumber, $prev, $next) {
 
   var $slider = $($DOMslider).bxSlider({
+    controls: false, 
+    pagerCustom: $pager,
     onSlideAfter: function($slideElement, oldIndex, newIndex){ 
       var currenItem = $slider.getCurrentSlide()+1;
       var slideQty = $slider.getSlideCount();
@@ -190,22 +148,10 @@ function slider_init_number($slider, $DOMslider, $pageNumber, $prev, $next) {
 };
 
 
-slider_init_number('s1', '.num-1', '.pages-2', '.num-1 .prev', '.num-1 .next');
-slider_init_number('s2', '.num-2', '.pages-3', '.num-2 .prev', '.num-2 .next');
-
-// var s1 = $('.num-1').bxSlider({
-
-//   onSlideAfter: function($slideElement, oldIndex, newIndex){ 
-//     console.log('rrr');
-//     var currenItem = s1.getCurrentSlide()+1;
-//     var slideQty = s1.getSlideCount();
-//     $('.pages-2').html(currenItem + '<em>/'+slideQty +'</em> '); 
-//   }
-
-// });
-
-
-
+slider_init_number('s1', '.num-1', '.dots-1', '.pages-2', '.num-1 .prev', '.num-1 .next');
+slider_init_number('s2', '.num-2', '.dots-2', '.pages-3', '.num-2 .prev', '.num-2 .next');
+slider_init_number('s3', '.num-3', '.dots-3', '.pages-4', '.num-3 .prev', '.num-3 .next');
+slider_init_number('s4', '.num-4', '.dots-4', '.pages-5', '.num-4 .prev', '.num-4 .next');
 
 
 
@@ -249,3 +195,32 @@ $(window).on('load', function() {
 
 
 });
+
+
+
+
+
+
+ymaps.ready(init);
+var myMap, 
+myPlacemark;
+
+function init(){ 
+  myMap = new ymaps.Map ("map-canvas", {
+    center: [56.099560, 47.262263],
+    zoom: 17
+  }); 
+
+
+
+  var myPlacemark = new ymaps.Placemark([56.099560, 47.262263], {
+    hintContent: 'TEXT'
+  }, 
+  {
+    preset: 'twirl#redDotIcon' 
+  });
+
+
+      // Р”РѕР±Р°РІР»РµРЅРёРµ РјРµС‚РєРё РЅР° РєР°СЂС‚Сѓ
+      myMap.geoObjects.add(myPlacemark);
+    }
