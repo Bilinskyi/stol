@@ -1,1 +1,24 @@
-<svg id="SvgjsSvg1000" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="41" height="41"><defs id="SvgjsDefs1001"><clipPath id="SvgjsClipPath1010"><path id="SvgjsPath1009" d="M390 801.5C390 790.17816 399.17816 781 410.5 781C421.82184 781 431 790.17816 431 801.5C431 812.82184 421.82184 822 410.5 822C399.17816 822 390 812.82184 390 801.5Z " fill="#ffffff"></path></clipPath></defs><path id="SvgjsPath1007" d="M396 801.5C396 793.49187 402.49187 787 410.5 787C418.50813 787 425 793.49187 425 801.5C425 809.50813 418.50813 816 410.5 816C402.49187 816 396 809.50813 396 801.5Z " fill="#ff8c00" fill-opacity="1" transform="matrix(1,0,0,1,-390,-781)"></path><path id="SvgjsPath1008" d="M390 801.5C390 790.17816 399.17816 781 410.5 781C421.82184 781 431 790.17816 431 801.5C431 812.82184 421.82184 822 410.5 822C399.17816 822 390 812.82184 390 801.5Z " fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter" stroke-linecap="butt" stroke-opacity="1" stroke="#ffffff" stroke-miterlimit="50" stroke-width="6" clip-path="url(&quot;#SvgjsClipPath1010&quot;)" transform="matrix(1,0,0,1,-390,-781)"></path><path id="SvgjsPath1011" d="M411 807L411 797 " fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter" stroke-linecap="square" stroke-opacity="1" stroke="#ffffff" stroke-miterlimit="50" stroke-width="1" transform="matrix(1,0,0,1,-390,-781)"></path><path id="SvgjsPath1012" d="M405.5 801.5L415.5 801.5 " fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter" stroke-linecap="square" stroke-opacity="1" stroke="#ffffff" stroke-miterlimit="50" stroke-width="1" transform="matrix(1,0,0,1,-390,-781)"></path></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 36</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20.5" cy="20.5" r="20.5"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="41" height="41" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-1920-Copy-3" transform="translate(-912.000000, -1516.000000)">
+            <g id="Group" transform="translate(641.000000, 1074.000000)">
+                <g id="Group-36" transform="translate(271.000000, 442.000000)">
+                    <ellipse id="Oval-Copy-21" fill="#FF8C00" cx="20.5" cy="20.5" rx="14.5" ry="14.5"></ellipse>
+                    <use id="Oval-Copy-22" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="6" opacity="0.300000012" xlink:href="#path-1"></use>
+                    <path d="M21,26 L21,16" id="Line-Copy-32" stroke="#FFFFFF" stroke-linecap="square"></path>
+                    <path d="M15.5,20.5 L25.5,20.5" id="Line-Copy-35" stroke="#FFFFFF" stroke-linecap="square"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

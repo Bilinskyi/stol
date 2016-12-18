@@ -1,1 +1,23 @@
-<svg id="SvgjsSvg1000" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="41" height="41"><defs id="SvgjsDefs1001"><clipPath id="SvgjsClipPath1009"><path id="SvgjsPath1008" d="M443 2361.5C443 2350.17816 452.17816 2341 463.5 2341C474.82184 2341 484 2350.17816 484 2361.5C484 2372.82184 474.82184 2382 463.5 2382C452.17816 2382 443 2372.82184 443 2361.5Z " fill="#ffffff"></path></clipPath></defs><path id="SvgjsPath1007" d="M443 2361.5C443 2350.17816 452.17816 2341 463.5 2341C474.82184 2341 484 2350.17816 484 2361.5C484 2372.82184 474.82184 2382 463.5 2382C452.17816 2382 443 2372.82184 443 2361.5Z " fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter" stroke-linecap="butt" stroke-opacity="1" stroke="#ffffff" stroke-miterlimit="50" stroke-width="6" clip-path="url(&quot;#SvgjsClipPath1009&quot;)" transform="matrix(1,0,0,1,-443,-2341)"></path><path id="SvgjsPath1010" d="M464 2367L464 2357 " fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter" stroke-linecap="square" stroke-opacity="1" stroke="#ffffff" stroke-miterlimit="50" stroke-width="1" transform="matrix(1,0,0,1,-443,-2341)"></path><path id="SvgjsPath1011" d="M458.5 2361.5L468.5 2361.5 " fill-opacity="0" fill="#ffffff" stroke-dasharray="0" stroke-linejoin="miter" stroke-linecap="square" stroke-opacity="1" stroke="#ffffff" stroke-miterlimit="50" stroke-width="1" transform="matrix(1,0,0,1,-443,-2341)"></path></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 38</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="20.5" cy="20.5" r="20.5"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="41" height="41" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-1920-Copy-3" transform="translate(-1438.000000, -2476.000000)" stroke="#FFFFFF">
+            <g id="Group-37" transform="translate(443.000000, 2476.000000)">
+                <g id="Group-38" transform="translate(995.000000, 0.000000)">
+                    <use id="Oval" mask="url(#mask-2)" stroke-width="6" opacity="0.100000001" xlink:href="#path-1"></use>
+                    <path d="M21,26 L21,16" id="Line" stroke-linecap="square"></path>
+                    <path d="M15.5,20.5 L25.5,20.5" id="Line-Copy" stroke-linecap="square"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
