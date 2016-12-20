@@ -12,6 +12,10 @@ h1,h2,h3,h4,h5,h6 {
 .hide-b {
   display: none;
 }
+.hide-0 {
+  display: none;
+  opacity: 0;
+}
 
 *, *:before, *:after {
   box-sizing: border-box;
