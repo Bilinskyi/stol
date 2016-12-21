@@ -3,6 +3,17 @@
 :-moz-placeholder {color: #4a4a4a;font-size: 16px;font-family: $normal;}
 :-ms-input-placeholder {color: #4a4a4a;font-size: 16px;font-family: $normal;}
 
+ .input-popup::-webkit-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+ .input-popup::-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+ .input-popup:-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+ .input-popup:-ms-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+
+
+.section-calc ::-webkit-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+.section-calc ::-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+.section-calc :-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+.section-calc :-ms-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
   padding: 0;

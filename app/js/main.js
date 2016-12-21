@@ -18,27 +18,53 @@ $(document).ready(function(){
 	});
 
 
+	var bx5 = $('.bx-calc-1').bxSlider({
+		nextText: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+		prevText: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+		pager: false,
+		controls: true
+
+	});;
+
+	var bx6 = $('.bx-calc-2').bxSlider({
+		nextText: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
+		prevText: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+		pager: false,
+		controls: true
+
+	});
+
+
 
 	$('.step-btn').on('click', function(e) {
 		e.preventDefault(); 
 
 		// if ($(this).hasClass('next-2step')) {
-			console.log('yes');
 			var th1 = $(this);
 			$(this).closest('.steps-all').animate({opacity: '0'}, 300, function() {
-				$(this).css('display', 'none').next().css('display', 'block').animate({opacity: '1'}, 300);
+				$(this).css('display', 'none').next().css('display', 'block').animate({opacity: '1'}, 300, function() {
+
+					if (th1.hasClass('next-5step')) {
+						console.log('5step');
+						bx5.reloadSlider();
 
 
 
-				if ($('.js-type').val()== 'Для кухни') {
-					console.log('Для кухни');
-				} else {
-					console.log('Для ванной комнаты');
-				}
+					} else if (th1.hasClass('next-6step')) {
+					bx6.reloadSlider();	
+					}
+
+				});
+
+
+
+
 
 			});
 
 		// }
+
+
 
 	});
 
@@ -109,9 +135,15 @@ $(document).ready(function(){
 
 	$(document).on('click', '.man-box', function(e) {
 		e.preventDefault(); 
-		$('.js-color').val('');
+		if ($(this).hasClass('val-color-1')) {
+			$('.js-color-1').val('');
+			$('.js-manufacturer-1').val($(this).attr('data-manufacturer')); 
+		} else if ($(this).hasClass('val-color-2')) {
+			$('.js-color-2').val('');
+			$('.js-manufacturer-2').val($(this).attr('data-manufacturer')); 
+		}
+		
 		$(this).addClass('active').closest('.manufacturer-item').siblings().find('.man-box').removeClass('active');
-		$('.js-manufacturer').val($(this).attr('data-manufacturer')); 
 
 
 
@@ -121,7 +153,14 @@ $(document).ready(function(){
 		e.preventDefault(); 
 		$(this).closest('.all-color-bg').find('.your-choose-color span').html('&nbsp;&nbsp;'+$(this).find('span').text());
 		$(this).addClass('active').closest('.color-item').siblings().find('.color-box').removeClass('active');
-		$('.js-color').val($(this).find('span').text());
+
+		if ($('.step-calc-2').css('display') == 'block') {
+			$('.js-color-1').val($(this).find('span').text());
+		} else {
+			$('.js-color-2').val($(this).find('span').text());
+		}
+
+		
 	});
 
 
@@ -130,11 +169,21 @@ $(document).ready(function(){
 
 	$(document).on('click', '.shape-box:not(.active)', function(e) {
 		e.preventDefault(); 
-		$('.radius, .add-click').removeClass('active');
-		$('div').removeClass('radius-bottom-left radius-bottom-right radius-top-right radius-top-left border-r-b-neg border-l-b-neg no-after');
-		$('.bg-draw').find('input').val('');
-		$(this).addClass('active').closest('.shape-item').siblings().find('.shape-box').removeClass('active'); 
-		$('.js-shape').val($(this).next().text());
+
+		if ($(this).closest('.container-step-3').length) {
+			console.log($(this));
+			$(this).closest('.container-step-3').find('.radius, .add-click').removeClass('active');
+			$(this).closest('.container-step-3').find('div').removeClass('radius-bottom-left radius-bottom-right radius-top-right radius-top-left border-r-b-neg border-l-b-neg no-after');
+			$(this).closest('.container-step-3').find('.bg-draw').find('input').val('');
+			$('.js-shape').val($(this).next().text());
+			$(this).addClass('active').closest('.shape-item').siblings().find('.shape-box').removeClass('active'); 
+		} else {
+			$('.js-shape-2').val($(this).next().text());
+			$(this).addClass('active').closest('.panel-wrapp').siblings().find('.shape-box').removeClass('active'); 
+		}
+
+
+		
 	});
 
 
@@ -170,11 +219,42 @@ $(document).ready(function(){
 
 
 
+ $(document).on('click', '.appearance-item', function(e) {
+ 	e.preventDefault(); 
+ 	$(this).toggleClass('active').parent('div').siblings().find('.appearance-item').removeClass('active'); 
+ });
 
 
 
 
- $('.m-h-1, .m-h-2, .top-photo .photo-box, .bottom-photo .photo-box, .map-height > div, .last-mh > div').matchHeight();
+
+ $(document).on('click', '.item-box-2', function(e) {
+ 	e.preventDefault(); 
+ 	$(this).closest('li').siblings().find('.item-box-2').removeClass('active'); 
+ 	$(this).addClass('active').closest('.item-wr').siblings().find('.item-box-2').removeClass('active'); 
+ 	$('.js-step-5').val($(this).next().text());
+ });
+
+
+
+
+$(document).on('click', '.img-wrapp-6', function(e) {
+ e.preventDefault(); 
+$(this).closest('li').siblings().find('.img-wrapp-6').removeClass('active'); 
+ 	$(this).addClass('active').closest('.item-last').siblings().find('.img-wrapp-6').removeClass('active'); 
+ 	$('.js-step-6').val($(this).next().text()); 
+});
+
+
+
+
+
+
+
+
+
+
+ $('.m-h-1, .m-h-2, .m-h-3, .top-photo .photo-box, .bottom-photo .photo-box, .map-height > div, .last-mh > div').matchHeight();
 
  $('.open-r').on('click', 'li:not(.active)', function(e) {
  	e.preventDefault(); 
