@@ -1079,6 +1079,7 @@
 				<input type="hidden" name="type" class="js-type" value="Для кухни">
 				<input type="hidden" name="manufacturer" class="js-manufacturer" value="">
 				<input type="hidden" name="color" class="js-color" value="">
+				<input type="hidden" name="shape" class="js-shape" value="">
 				<!-- <input type="hidden" name="manufacturer" class="js-manufacturer" value=""> -->
 				<div class="container">
 					<h2>Вы можете собрать проект<br>и рассчитать его стоимость</h2>
@@ -1146,7 +1147,339 @@
 						<div class="steps-line"><div>Шаг 3</div></div>
 						<div class="container-step-2">
 							<h3>Выбор толщины и формы изделия</h3>
+							<div class="text-xs">Толщина столешницы:</div>
+							<select name="thickness" class="select-thickness">
+								<option value="30мм">30мм</option>
+								<option value="50мм">50мм</option>
+							</select>
+							<div class="shape-wrapp">
+								<div class="shape-item">
+									<a href="#shape-1" class="various shape-box"><i class="step-3-1"></i></a>
+									<span>Прямая</span>
+								</div>
+								<div class="shape-item">
+									<a href="#shape-2" class="various shape-box"><i class="step-3-2"></i></a>
+									<span>Г-образная <br>Левая</span>
+								</div>
+								<div class="shape-item">
+									<a href="#shape-3" class="various shape-box"><i class="step-3-3"></i></a>
+									<span>Г-образная <br>Правая</span>
+								</div>
+								<div class="shape-item">
+									<a href="#shape-4" class="various shape-box"><i class="step-3-4"></i></a>
+									<span>П-образная</span>
+								</div>
+							</div>
 							<div class="center"><a href="#" class="button step-btn next-3step">Перейти к следующему шагу</a></div>
+							<div id="shape-1" class="bg-draw hide-b">
+								<div class="table-css">
+									<div class="t-cell-css">
+										<div class="name-shape">Прямая</div>
+										<div class="shape-allclass-draw">
+											<div class="shape-1-1 shape-after-title">
+												<div class="radius add-click r-1">R</div>
+												<div class="radius add-click r-2">R</div>
+												<div class="radius add-click r-3">R</div>
+												<div class="radius add-click r-4">R</div>
+												<div class="height left-input">
+													<div class="top-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="bottom-arrow"></div>
+												</div>
+												<div class="height right-input">
+													<div class="top-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="bottom-arrow"></div>
+												</div>
+												<div class="width">
+													<div class="left-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="right-arrow"></div>
+												</div>
+											</div>	
+
+											<div class="clearfix add-option">
+												<div class="left-shape">
+													<div class="add-click">Добавить остров</div>													
+													<div class="spape-1-2">
+														<div class="height right-input">
+															<div class="top-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="bottom-arrow"></div>
+														</div>
+														<div class="width">
+															<div class="left-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="right-arrow"></div>
+														</div>	
+													</div>
+												</div>
+												<div class="left-shape">
+													<div class="add-click">Добавить барную стойку</div>
+													<div class="spape-1-3">
+														<div class="height right-input">
+															<div class="top-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="bottom-arrow"></div>
+														</div>
+														<div class="width">
+															<div class="left-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="right-arrow"></div>
+														</div>	
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="shape-2" class="bg-draw hide-b">
+								<div class="table-css">
+									<div class="t-cell-css">
+										<div class="name-shape">Г-образная / левая</div>
+										<div class="shape-allclass-draw clearfix">
+											<div class="shape-2-1 shape-after-title">
+												<div class="top-wrapp-shape-2-1 clearfix">
+													<div class="top-shape-2-1 negative r-b">
+														<div class="radius add-click r-1">R</div>
+														<div class="radius add-click round-3">R</div>	
+													</div>
+													<div class="top-shape-2-1-right">
+														<div class="radius add-click r-2">R</div>	
+														<div class="radius add-click r-3">R</div>	
+													</div>
+												</div>
+												<div class="bottom-shape-2-1">
+													<div class="radius add-click r-3">R</div>	
+													<div class="radius add-click r-4">R</div>
+													<div class="width width-bottom">
+														<div class="left-arrow"></div>
+														<input type="text" placeholder="0.00 м">	
+														<div class="right-arrow"></div>
+													</div>
+												</div>
+												<div class="height left-input">
+													<div class="top-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="bottom-arrow"></div>
+												</div>
+												<div class="height right-input">
+													<div class="top-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="bottom-arrow"></div>
+												</div>
+												<div class="width">
+													<div class="left-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="right-arrow"></div>
+												</div>
+											</div>	
+
+											<div class="clearfix mt-left-shape">
+												<div class="left-shape">
+													<div class="add-click">Добавить остров</div>													
+													<div class="spape-1-2">
+														<div class="height right-input">
+															<div class="top-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="bottom-arrow"></div>
+														</div>
+														<div class="width">
+															<div class="left-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="right-arrow"></div>
+														</div>	
+													</div>
+												</div>
+												<div class="left-shape">
+													<div class="add-click">Добавить барную стойку</div>
+													<div class="spape-1-3">
+														<div class="height right-input">
+															<div class="top-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="bottom-arrow"></div>
+														</div>
+														<div class="width">
+															<div class="left-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="right-arrow"></div>
+														</div>	
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div id="shape-3" class="bg-draw hide-b">
+								<div class="table-css">
+									<div class="t-cell-css">
+										<div class="name-shape">Г-образная / правая</div>
+										<div class="shape-allclass-draw clearfix">
+											<div class="shape-2-1 mod-shape-3-1 shape-after-title">
+												<div class="top-wrapp-shape-2-1 clearfix">
+													<div class="top-shape-2-1 negative l-b">
+														<div class="radius add-click r-2">R</div>
+														<div class="radius add-click round-4">R</div>	
+													</div>
+													<div class="top-shape-2-1-right">
+														<div class="radius add-click r-1">R</div>	
+														<div class="radius add-click r-4">R</div>	
+													</div>
+												</div>
+												<div class="bottom-shape-2-1">
+													<div class="radius add-click r-3">R</div>	
+													<div class="radius add-click r-4">R</div>
+													<div class="width width-bottom">
+														<div class="left-arrow"></div>
+														<input type="text" placeholder="0.00 м">	
+														<div class="right-arrow"></div>
+													</div>
+												</div>
+												<div class="height left-input">
+													<div class="top-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="bottom-arrow"></div>
+												</div>
+												<div class="height right-input">
+													<div class="top-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="bottom-arrow"></div>
+												</div>
+												<div class="width">
+													<div class="left-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="right-arrow"></div>
+												</div>
+											</div>	
+
+											<div class="clearfix mt-left-shape">
+												<div class="left-shape">
+													<div class="add-click">Добавить остров</div>													
+													<div class="spape-1-2">
+														<div class="height right-input">
+															<div class="top-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="bottom-arrow"></div>
+														</div>
+														<div class="width">
+															<div class="left-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="right-arrow"></div>
+														</div>	
+													</div>
+												</div>
+												<div class="left-shape">
+													<div class="add-click">Добавить барную стойку</div>
+													<div class="spape-1-3">
+														<div class="height right-input">
+															<div class="top-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="bottom-arrow"></div>
+														</div>
+														<div class="width">
+															<div class="left-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="right-arrow"></div>
+														</div>	
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="shape-4" class="bg-draw hide-b">
+								<div class="table-css">
+									<div class="t-cell-css">
+										<div class="name-shape">П-Образная</div>
+										<div class="shape-allclass-draw clearfix">
+											<div class="shape-2-1 mod-shape-4-1 shape-after-title">
+												<div class="top-wrapp-shape-2-1 clearfix">
+													<div class="top-shape-2-1 negative r-b">
+														<div class="radius add-click r-1">R</div>
+														<div class="radius add-click round-3">R</div>	
+													</div>
+													<div class="top-shape-2-1-right">
+														
+													</div>
+													<div class="top-shape-2-1 negative l-b">
+														<div class="radius add-click r-2">R</div>
+														<div class="radius add-click round-4">R</div>	
+													</div>
+												</div>
+												<div class="bottom-shape-2-1">
+													<div class="radius add-click r-3">R</div>	
+													<div class="radius add-click r-4">R</div>
+													<div class="width width-bottom">
+														<div class="left-arrow"></div>
+														<input type="text" placeholder="0.00 м">	
+														<div class="right-arrow"></div>
+													</div>
+												</div>
+												<div class="bottom-shape-2-1 right">
+													<div class="radius add-click r-3">R</div>	
+													<div class="radius add-click r-4">R</div>
+												</div>
+												<div class="height left-input">
+													<div class="top-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="bottom-arrow"></div>
+												</div>
+												<div class="height right-input">
+													<div class="top-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="bottom-arrow"></div>
+												</div>
+												<div class="width">
+													<div class="left-arrow"></div>
+													<input type="text" placeholder="0.00 м">	
+													<div class="right-arrow"></div>
+												</div>
+											</div>	
+
+											<div class="clearfix mt-left-shape">
+												<div class="left-shape">
+													<div class="add-click">Добавить остров</div>													
+													<div class="spape-1-2">
+														<div class="height right-input">
+															<div class="top-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="bottom-arrow"></div>
+														</div>
+														<div class="width">
+															<div class="left-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="right-arrow"></div>
+														</div>	
+													</div>
+												</div>
+												<div class="left-shape">
+													<div class="add-click">Добавить барную стойку</div>
+													<div class="spape-1-3">
+														<div class="height right-input">
+															<div class="top-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="bottom-arrow"></div>
+														</div>
+														<div class="width">
+															<div class="left-arrow"></div>
+															<input type="text" placeholder="0.00 м">	
+															<div class="right-arrow"></div>
+														</div>	
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
 
