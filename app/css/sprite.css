@@ -19,45 +19,166 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 
 .ico.choose-1 {
   background-image: url(../img/sprite.png);
-  background-position: -96px 0px;
+  background-position: -326px -102px;
   width: 91px;
   height: 97px;
 }
+
+
 .left-choose.active .ico.choose-1 {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -326px 0px;
   width: 91px;
   height: 97px;
 }
+
 
 .ico.choose-2 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -102px;
-  width: 90px;
-  height: 96px;
-}
-.right-choose.active .ico.choose-2 {
-  background-image: url(../img/sprite.png);
-  background-position: -192px 0px;
+  background-position: 0px -306px;
   width: 90px;
   height: 96px;
 }
 
+
+.right-choose.active .ico.choose-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -326px -204px;
+  width: 90px;
+  height: 96px;
+}
+
+
+
 .ico.plus-1 {
   background-image: url(../img/sprite.png);
-  background-position: -141px -102px;
+  background-position: -341px -306px;
   width: 41px;
   height: 41px;
 }
 .ico.plus-1:hover {
   background-image: url(../img/sprite.png);
-  background-position: -95px -102px;
+  background-position: 0px -461px;
   width: 41px;
   height: 41px;
 }
 li.active .ico.plus-1 {
   background-image: url(../img/sprite.png);
-  background-position: -95px -102px;
+  background-position: 0px -461px;
   width: 41px;
   height: 41px;
+}
+
+
+.ico.step-3-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -422px -296px;
+  width: 118px;
+  height: 42px;
+}
+
+.shape-box:hover .ico.step-3-1,
+.shape-box.active .ico.step-3-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -422px -343px;
+  width: 118px;
+  height: 42px;
+}
+
+.ico.step-3-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -218px -306px;
+  width: 118px;
+  height: 69px;
+}
+.shape-box:hover .ico.step-3-2,
+.shape-box.active .ico.step-3-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -95px -306px;
+  width: 118px;
+  height: 69px;
+}
+
+.ico.step-3-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -422px -74px;
+  width: 118px;
+  height: 69px;
+}
+.shape-box:hover .ico.step-3-3,
+.shape-box.active .ico.step-3-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -422px 0px;
+  width: 118px;
+  height: 69px;
+}
+
+.ico.step-3-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -422px -222px;
+  width: 118px;
+  height: 69px;
+}
+.shape-box:hover .ico.step-3-4,
+.shape-box.active .ico.step-3-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -422px -148px;
+  width: 118px;
+  height: 69px;
+}
+
+.ico.step-4-1 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -153px;
+  width: 158px;
+  height: 148px;
+}
+.appearance-item:hover .ico.step-4-1,
+.appearance-item.active .ico.step-4-1{
+  background-image: url(../img/sprite.png);
+  background-position: -163px -153px;
+  width: 158px;
+  height: 148px;
+}
+
+.ico.step-4-2 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 158px;
+  height: 148px;
+}
+.appearance-item:hover .ico.step-4-2,
+.appearance-item.active .ico.step-4-2{
+  background-image: url(../img/sprite.png);
+  background-position: -163px 0px;
+  width: 158px;
+  height: 148px;
+}
+
+.ico.step-4-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -407px;
+  width: 82px;
+  height: 29px;
+}
+.shape-box:hover .ico.step-4-3,
+.shape-box.active .ico.step-4-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -407px;
+  width: 82px;
+  height: 29px;
+}
+
+.ico.step-4-4 {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -407px;
+  width: 82px;
+  height: 49px;
+}
+.shape-box:hover .ico.step-4-4,
+.shape-box.active .ico.step-4-4 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -407px;
+  width: 82px;
+  height: 49px;
 }
