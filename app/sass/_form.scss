@@ -38,7 +38,50 @@ input.error {
 	width: 427px;
 	background: rgba(255,255,255, .9);
 	text-align: left;
-	padding: 40px;
+	padding: 60px 40px;
+	&.popup-form {
+		background-color: #fff;
+		form {
+			padding-top: 30px;
+			input {
+				color: #4a4a4a;
+				font-size: 14px;
+			}
+		}
+		.tabs-caption-call {
+			margin-bottom: 20px;
+			li {
+				width: 50%;
+				float: left;
+				height: 30px;
+				border: 1px solid #9d9d9d;
+				color: white;
+				font-size: 12px;
+				letter-spacing: 1.05px;
+				line-height: 30px;
+				text-transform: uppercase;
+				text-align: center;
+				color: #9d9d9d;
+				&.active {
+					background-color: #d1b38c;
+					color: #fff;
+					border: 1px solid #d1b38c;
+				}
+			}
+		}
+		.tabs-content-input {
+			display: none;
+			&.active {
+				display: block;
+				input {
+					margin: 0px 0 25px;
+				}
+			}
+		}
+	}
+	.form-sm-call {
+		margin: 0px 0 10px !important;
+	}
 	.button {
 		width: 100%;
 	}

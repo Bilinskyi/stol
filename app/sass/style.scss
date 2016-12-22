@@ -5,6 +5,7 @@
 @import "_slider.scss";
 @import "_play-button.scss";
 @import "_animation.scss";
+@import "_privacy.scss";
 @import "_form.scss";
 
 h2 {
@@ -148,6 +149,9 @@ header {
 				font-size: 12px;
 				letter-spacing: 0.8px;
 				text-transform: uppercase;
+				&:hover {
+					text-decoration: underline !important;
+				}
 			}
 		}
 	}
@@ -356,7 +360,6 @@ header {
 		}
 		p {
 			display: none;
-			margin: 0;
 			&.active {
 				display: block;
 			}
@@ -1455,12 +1458,12 @@ a:hover {
 	padding: 120px 0 95px;
 	.wrapp-inline {
 		input {
-				width: 55px;
-				height: 30px;
-				background-color: white;
-				border: 1px solid #e2e2e2;
-				text-align: center;
-			}
+			width: 55px;
+			height: 30px;
+			background-color: white;
+			border: 1px solid #e2e2e2;
+			text-align: center;
+		}
 		&>* {
 			display: inline-block;
 			vertical-align: middle;
@@ -3139,4 +3142,13 @@ footer {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
 

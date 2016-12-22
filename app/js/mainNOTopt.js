@@ -1,6 +1,8 @@
 
 $(document).ready(function(){
 
+
+
 	$('input,textarea').focus(function(){
 		$(this).data('placeholder',$(this).attr('placeholder'))
 		.attr('placeholder','');
