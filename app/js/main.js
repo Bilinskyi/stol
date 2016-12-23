@@ -36,6 +36,7 @@ $(document).ready(function(){
 		nextText: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
 		prevText: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
 		pager: false,
+		// infiniteLoop: false,
 		controls: true
 
 	});
@@ -211,7 +212,20 @@ $(document).ready(function(){
 			thisAclick.parent('div').toggleClass('border-r-b-neg').css('transition', '.15s');
 		} else if (thisAclick.hasClass('round-4')) {
 			thisAclick.parent('div').toggleClass('border-l-b-neg').css('transition', '.15s');
-		} 
+		} else if (thisAclick.hasClass('val-bort')) {
+			if ($(this).hasClass('active')) {
+				$('.js-bort').val($(this).text()); 
+			} else {
+				$('.js-bort').val('');
+			}
+		} else if (thisAclick.hasClass('val-panel')) {
+			if ($(this).hasClass('active')) {
+				$('.js-panel').val($(this).text()); 
+			} else {
+				$('.js-panel').val('');
+
+			}
+		}
 
 	});
 
@@ -280,6 +294,34 @@ $(document).ready(function(){
 				$('.js-add-2').val('');
 			}
 			
+		} else if ($(this).hasClass('val-rad-2-1')) {
+			if ($(this).hasClass('active')) {
+				$('.js-rad-2-1').val($(this).text());
+			} else {
+				$('.js-rad-2-1').val('');
+			}
+			
+		} else if ($(this).hasClass('val-rad-2-2')) {
+			if ($(this).hasClass('active')) {
+				$('.js-rad-2-2').val($(this).text());
+			} else {
+				$('.js-rad-2-2').val('');
+			}
+			
+		} else if ($(this).hasClass('val-rad-2-3')) {
+			if ($(this).hasClass('active')) {
+				$('.js-rad-2-3').val($(this).text());
+			} else {
+				$('.js-rad-2-3').val('');
+			}
+			
+		} else if ($(this).hasClass('val-rad-2-4')) {
+			if ($(this).hasClass('active')) {
+				$('.js-rad-2-4').val($(this).text());
+			} else {
+				$('.js-rad-2-4').val('');
+			}
+			
 		}
 
 	});
@@ -292,9 +334,10 @@ $(document).ready(function(){
 
 
 
- $(document).on('click', '.appearance-item', function(e) {
+ $(document).on('click', '.appearance-item:not(.active)', function(e) {
  	e.preventDefault(); 
- 	$(this).toggleClass('active').parent('div').siblings().find('.appearance-item').removeClass('active'); 
+ 	$(this).addClass('active').parent('div').siblings().find('.appearance-item').removeClass('active'); 
+ 	$('.js-view-bort').val($(this).find('span').text());
  });
 
 
