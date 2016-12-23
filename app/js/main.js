@@ -1,6 +1,18 @@
 
 $(document).ready(function(){
 
+
+// 	$(".custom-fancy").fancybox({
+//     afterShow: function () {
+//         $("#submitForm").on("click", function () {
+//             $.fancybox.close();
+//             setTimeout(function () {
+//                 $("#myForm").submit();
+//             }, 100);
+//         });
+//     }
+// });
+
 	$('input,textarea').focus(function(){
 		$(this).data('placeholder',$(this).attr('placeholder'))
 		.attr('placeholder','');
@@ -36,7 +48,7 @@ $(document).ready(function(){
 		nextText: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
 		prevText: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
 		pager: false,
-		// infiniteLoop: false,
+		infiniteLoop: false,
 		controls: true
 
 	});

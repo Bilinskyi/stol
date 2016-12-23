@@ -149,7 +149,7 @@ $numberfloor = $_POST["numberfloor"]; // Количество этажей:
 	if (isset($time)) {
 		$message = "$phone<br>$time<br>$formname";
 	} else if (isset($type)) {
-		$message = "Тип столешницы: $type<br>производитель: $manufacturer1<br>Цвет камня: $color1<br>Толщина столешницы: $thickness<br>";
+		$message = "Телефон: $phone<br><br>Тип столешницы: $type<br>производитель: $manufacturer1<br>Цвет камня: $color1<br>Толщина столешницы: $thickness<br>";
 		if ($shape1 == 'Прямая') {
 			$message .= "<br>Форма изделия: $shape1<br>$radius1<br>$radius2<br>$radius3<br>$radius4<br>Высота: $height1_1<br>Ширина: $width1_1<br>";
 			if (!empty($add1)) {

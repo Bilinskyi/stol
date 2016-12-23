@@ -1821,7 +1821,7 @@
 											<img src="img/img-6-1.jpg" alt="" width="231" height="160">
 										</div>
 										<div class="text-xs">Модель 1R60</div>
-										<div class="wrapp-inline"><span>Колличество</span><input type="text" name="numb1" placeholder="1"></div>
+										<div class="wrapp-inline"><span>Колличество</span><input type="text" name="numb1" value="" placeholder="1"></div>
 									</div>
 									<div class="item-last">
 										<div class="img-wrapp-6">
@@ -1985,13 +1985,23 @@
 							</div>
 						</div>
 						<hr>
-						<div class="center"><!-- <a href="#count" class="button modal-form">Собрать и расчитать стоимость проекта</a> -->
-							<button type="submit">отправить</button>
+						<div class="center">
+							<a href="#count" class="button step-btn">Собрать и расчитать стоимость проекта</a>
 						</div>
 
 					</div>
 
+					<div class="hide-0">
+						<div id="count" class="form-all popup-form center-form">
+							<div class="form-title">СОБРАТЬ ПРОЕКТ</div>
+							<div class="form-sm">Оставьте контактные данные для получения расчета от менеджера</div>
+							<input type="tel" name="phone" class="mask" placeholder="+7 (___) ___-__-__"> 
+							<button type="submit" class="button">Отправить</button>
+						</div>
+					</div>
 
+
+					
 				</div>  
 			</form>
 		</section>
@@ -2206,15 +2216,15 @@
 
 
 	<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
-	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- <script src="js/jquery.bxslider.min.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/check_ajax.js"></script>       
 	<script src="js/jquery.maskedinput.js"></script>   
 	<script src="js/jquery.form.js"></script>       
 	<script src="js/jquery.validate.js"></script>     
-	<script src="js/jquery.matchHeight.js"></script>
+	<script src="js/jquery.matchHeight.js"></script> -->
 
-	<!-- <script src="js/libs.min.js"></script> -->
+	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>
