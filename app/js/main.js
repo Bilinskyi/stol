@@ -200,6 +200,8 @@ $(document).ready(function(){
 		$(this).toggleClass('active').parent('div').toggleClass('no-after');
 
 		var thisAclick = $(this);
+
+
 		if (thisAclick.hasClass('r-1')) {
 			thisAclick.parent('div').toggleClass('radius-top-left').css('transition', '.15s');
 		} else if (thisAclick.hasClass('r-2')) {
@@ -225,7 +227,73 @@ $(document).ready(function(){
 				$('.js-panel').val('');
 
 			}
-		}
+		} else if (thisAclick.hasClass('val-step-7-1')) {
+			if ($(this).hasClass('active')) {
+				$('.js-step-7-1').val($(this).text()); 
+			} else {
+				$('.js-step-7-1').val('');
+			}
+		} else if (thisAclick.hasClass('val-step-7-2')) {
+			if ($(this).hasClass('active')) {
+				$('.js-step-7-2').val($(this).text()); 
+			} else {
+				$('.js-step-7-2').val('');
+			}
+		} else if (thisAclick.hasClass('val-step-7-3')) {
+			if ($(this).hasClass('active')) {
+				$('.js-step-7-3').val($(this).text()); 
+			} else {
+				$('.js-step-7-3').val('');
+			}
+		} else if (thisAclick.hasClass('val-step-7-4')) {
+			if ($(this).hasClass('active')) {
+				$('.js-step-7-4').val($(this).text()); 
+			} else {
+				$('.js-step-7-4').val('');
+			}
+		} else if (thisAclick.hasClass('val-step-7-5')) {
+			if ($(this).hasClass('active')) {
+				$('.js-step-7-5').val($(this).text()); 
+			} else {
+				$('.js-step-7-5').val('');
+			} 
+		} else if (thisAclick.hasClass('val-step-7-6')) {
+			if ($(this).hasClass('active')) {
+				$('.js-step-7-6').val($(this).text()); 
+			} else {
+				$('.js-step-7-6').val('');
+			}
+		} else if (thisAclick.hasClass('val-step-8-1')) {
+			if ($(this).hasClass('active')) {
+				$('.js-step-8-1').val($(this).text()); 
+			} else {
+				$('.js-step-8-1').val('');
+			}
+		} else if (thisAclick.hasClass('val-step-8-2')) {
+			if ($(this).hasClass('active')) {
+				$('.js-step-8-2').val($(this).text()); 
+			} else {
+				$('.js-step-8-2').val('');
+			}
+		} else if (thisAclick.hasClass('val-step-8-3')) {
+			if ($(this).hasClass('active')) {
+				$('.js-step-8-3').val($(this).text()); 
+			} else {
+				$('.js-step-8-3').val('');
+			}
+		} else if (thisAclick.hasClass('val-st9-1')) {
+			if ($(this).hasClass('active')) {
+				$('.js-step-9-1').val($(this).text()); 
+			} else {
+				$('.js-step-9-1').val('');
+			}
+		} else if (thisAclick.hasClass('val-st9-2')) {
+			if ($(this).hasClass('active')) {
+				$('.js-step-9-2').val($(this).text()); 
+			} else {
+				$('.js-step-9-2').val('');
+			}
+		} 
 
 	});
 
@@ -296,28 +364,28 @@ $(document).ready(function(){
 			
 		} else if ($(this).hasClass('val-rad-2-1')) {
 			if ($(this).hasClass('active')) {
-				$('.js-rad-2-1').val($(this).text());
+				$('.js-rad-2-1').val('R1');
 			} else {
 				$('.js-rad-2-1').val('');
 			}
 			
 		} else if ($(this).hasClass('val-rad-2-2')) {
 			if ($(this).hasClass('active')) {
-				$('.js-rad-2-2').val($(this).text());
+				$('.js-rad-2-2').val('R2');
 			} else {
 				$('.js-rad-2-2').val('');
 			}
 			
 		} else if ($(this).hasClass('val-rad-2-3')) {
 			if ($(this).hasClass('active')) {
-				$('.js-rad-2-3').val($(this).text());
+				$('.js-rad-2-3').val('R3');
 			} else {
 				$('.js-rad-2-3').val('');
 			}
 			
 		} else if ($(this).hasClass('val-rad-2-4')) {
 			if ($(this).hasClass('active')) {
-				$('.js-rad-2-4').val($(this).text());
+				$('.js-rad-2-4').val('R4');
 			} else {
 				$('.js-rad-2-4').val('');
 			}

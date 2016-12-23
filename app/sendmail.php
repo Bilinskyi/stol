@@ -120,14 +120,38 @@ $w_b = $_POST["w_b"];
 	$numb12 = $_POST["numb12"];
 
 
+	$stepseven1 = $_POST["stepseven1"]; // ВЫРЕЗ ОТВЕРСТИЯ ПОД МОЙКУ (кол.)
+	$stepseven2 = $_POST["stepseven2"]; // ВЫРЕЗ ОТВЕРСТИЯ ПОД ВАРОЧНУЮ ПАНЕЛЬ (кол.)
+	$stepseven3 = $_POST["stepseven3"]; // ВЫРЕЗ ОТВЕРСТИЯ ПОД СМЕСИТЕЛЬ И ДР. (кол.)
+	$stepseven4 = $_POST["stepseven4"]; // ВКЛЕЙКА МОЙКИ СНИЗУ (кол.)
+	$stepseven5 = $_POST["stepseven5"]; // ВЫРЕЗ ПОД ВКЛЕЙКУ ВАРОЧНОЙ ПОВЕРХНОСТИ ВРОВЕНЬ СО СТОЛЕШНИЦЕЙ (кол.)
+	$stepseven6 = $_POST["stepseven6"]; // ПОДКЛЕЙКА КАМНЯ СНИЗУ (кол.)
+
+$st7n_1 = $_POST["st7n_1"]; // ВЫРЕЗ ОТВЕРСТИЯ ПОД МОЙКУ 
+$st7n_2 = $_POST["st7n_2"]; // ВЫРЕЗ ОТВЕРСТИЯ ПОД ВАРОЧНУЮ ПАНЕЛЬ 
+$st7n_3 = $_POST["st7n_3"]; // ВЫРЕЗ ОТВЕРСТИЯ ПОД СМЕСИТЕЛЬ И ДР. 
+$st7n_4 = $_POST["st7n_4"]; // ВКЛЕЙКА МОЙКИ СНИЗУ 
+$st7n_5 = $_POST["st7n_5"]; // ВЫРЕЗ ПОД ВКЛЕЙКУ ВАРОЧНОЙ ПОВЕРХНОСТИ ВРОВЕНЬ СО СТОЛЕШНИЦЕЙ 
+$st7n_6 = $_POST["st7n_6"]; // ПОДКЛЕЙКА КАМНЯ СНИЗУ 
+
+
+$st8n_1 = $_POST["st8n_1"]; // ПРОТОЧКИ ДЛЯ СТОКА ВОДЫ (5 ШТ.)
+$st8n_2 = $_POST["st8n_2"]; // ПРОТОЧКИ СКВОЗНЫЕ ДЛЯ БАТАРЕИ (10 ШТ.)
+$st8n_3 = $_POST["st8n_3"]; // ПРУТКИ ПОД ГОРЯЧЕЕ
+
+$st9n_1 = $_POST["st9n_1"]; // ПОДЪЕМ ИЗДЕЛИЯ ВРУЧНУЮ
+$st9n_2 = $_POST["st9n_2"]; // ДОСТАВКА
+
+$numberfloor = $_POST["numberfloor"]; // Количество этажей:
+
 	$to  = "1unitedcrew@gmail.com";  
 
 	if (isset($time)) {
 		$message = "$phone<br>$time<br>$formname";
 	} else if (isset($type)) {
-		$message = "$type<br>$manufacturer1<br>$color1<br>$thickness<br>";
+		$message = "Тип столешницы: $type<br>производитель: $manufacturer1<br>Цвет камня: $color1<br>Толщина столешницы: $thickness<br>";
 		if ($shape1 == 'Прямая') {
-			$message .= "<br>$shape1<br>$radius1<br>$radius2<br>$radius3<br>$radius4<br>Высота: $height1_1<br>Ширина: $width1_1<br>";
+			$message .= "<br>Форма изделия: $shape1<br>$radius1<br>$radius2<br>$radius3<br>$radius4<br>Высота: $height1_1<br>Ширина: $width1_1<br>";
 			if (!empty($add1)) {
 				$message .= "<br><br>$add1<br>Высота: $heightadd1_1<br>Ширина: $widthadd1_1<br>";
 			}
@@ -135,7 +159,7 @@ $w_b = $_POST["w_b"];
 				$message .= "<br><br>$add2<br>Высота: $heightadd1_2<br>Ширина: $widthadd1_2<br>";
 			}
 		} if ($shape1 == 'Г-образная Левая') {
-			$message .= "<br>$shape1<br>$radius1<br>$radius2<br>$radius3<br>$radius4<br>$radius5<br>$radius6
+			$message .= "<br>Форма изделия: $shape1<br>$radius1<br>$radius2<br>$radius3<br>$radius4<br>$radius5<br>$radius6
 			<br>Высота (left): $height2_1<br>Высота (right): $height2_2<br>
 			Ширина (top): $width2_1<br>Ширина (bottom): $width2_2<br>"; 
 			if (!empty($add1)) {
@@ -145,7 +169,7 @@ $w_b = $_POST["w_b"];
 				$message .= "<br><br>$add2<br>Высота: $heightadd2_2<br>Ширина: $widthadd2_2<br>";
 			}
 		} if ($shape1 == 'Г-образная Правая') {
-			$message .= "<br>$shape1<br>$radius1<br>$radius2<br>$radius3<br>$radius4<br>$radius5<br>$radius6
+			$message .= "<br>Форма изделия: $shape1<br>$radius1<br>$radius2<br>$radius3<br>$radius4<br>$radius5<br>$radius6
 			<br>Высота (left): $height3_1<br>Высота (right): $height3_2<br>
 			Ширина (top): $width3_1<br>Ширина (bottom): $width3_2<br>"; 
 			if (!empty($add1)) {
@@ -155,7 +179,7 @@ $w_b = $_POST["w_b"];
 				$message .= "<br><br>$add2<br>Высота: $heightadd3_2<br>Ширина: $widthadd3_2<br>";
 			}
 		} if ($shape1 == 'П-образная') {
-			$message .= "<br>$shape1<br>$radius1<br>$radius2<br>$radius3<br>$radius4<br>$radius5<br>$radius6<br>$radius7<br>$radius8
+			$message .= "<br>Форма изделия: $shape1<br>$radius1<br>$radius2<br>$radius3<br>$radius4<br>$radius5<br>$radius6<br>$radius7<br>$radius8
 			<br>Высота (left): $height4_1<br>Высота (right): $height4_2<br>
 			Ширина (top): $width4_1<br>Ширина (bottom): $width4_2<br>"; 
 			if (!empty($add1)) {
@@ -171,10 +195,10 @@ $w_b = $_POST["w_b"];
 		if (!empty($panel)) {
 			$message .= "<br><br>$panel<br>Производитель (шаг4): $manufacturer2<br>Цвет (шаг4): $color2<br>";
 			if ($shape2 == 'Стеновая панель прямоугольная') {
-				$message .= "$shape2<br>$radius2_1<br>$radius2_2<br>$radius2_3<br>$radius2_4<br>высота: $s_height_s1<br>ширина: $s_width_s1<br>";
+				$message .= "Форма стеновой панели: $shape2<br>$radius2_1<br>$radius2_2<br>$radius2_3<br>$radius2_4<br>высота: $s_height_s1<br>ширина: $s_width_s1<br>";
 			}
 			if ($shape2 == 'Стеновая панель под вытяжку') {
-				$message .= "$shape2<br>высота (left): $h_l<br> ширина (left-top): $w_l_top<br>ширина (top): $w_top<br>высота (top-right): $h_t_right<br>
+				$message .= "Форма стеновой панели: $shape2<br>высота (left): $h_l<br> ширина (left-top): $w_l_top<br>ширина (top): $w_top<br>высота (top-right): $h_t_right<br>
 				высота (right): $h_r<br>ширина (bottom): $w_b<br>";
 			}
 		}
@@ -218,6 +242,25 @@ $w_b = $_POST["w_b"];
 				$message .= " $numb12<br>";
 			}
 		}
+		if (!empty($st7n_1)) {
+			$message .= "<br><br>$st7n_1<br>колличество: $stepseven1";
+		}
+		if (!empty($st7n_2)) {
+			$message .= "<br><br>$st7n_2<br>колличество: $stepseven2";
+		}
+		if (!empty($st7n_3)) {
+			$message .= "<br><br>$st7n_3<br>колличество: $stepseven3";
+		}
+		if (!empty($st7n_4)) {
+			$message .= "<br><br>$st7n_4<br>колличество: $stepseven4";
+		}
+		if (!empty($st7n_5)) {
+			$message .= "<br><br>$st7n_5<br>колличество: $stepseven5";
+		}
+		if (!empty($st7n_6)) {
+			$message .= "<br><br>$st7n_6<br>колличество: $stepseven6";
+		}
+		$message .= "<br><br>$st8n_1<br>$st8n_2<br>$st8n_3<br><br>$st9n_1<br>$st9n_2<br>Количество этажей: $numberfloor";
 
 	} else {
 		$message = "$phone<br>$email<br>$formname";
