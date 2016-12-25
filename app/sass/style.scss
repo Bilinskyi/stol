@@ -26,6 +26,11 @@ h2 {
 		line-height: 48px;
 		letter-spacing: 6px;
 	}
+	@media #{$bp-medium} {
+	      font-size: 26px;
+letter-spacing: 4.12px;
+line-height: 30px;
+	}
 }
 
 h5 {
@@ -43,6 +48,11 @@ h5 {
 		font-size: 15px;
 		line-height: 24px;
 		letter-spacing: 2px;
+	}
+	@media #{$bp-medium} {
+	      font-size: 10px;
+letter-spacing: 1.33px;
+line-height: 13px;
 	}
 }
 
@@ -100,6 +110,10 @@ header {
 			font-size: 12px;
 			line-height: 15px;
 		}
+		@media #{$bp-medium} {
+		      font-size: 10px;
+		      line-height: 13px;
+		}
 	}
 	.logo {
 		display: inline-block;
@@ -143,7 +157,7 @@ header {
 			margin-left: 6px;
 		}
 		@media #{$bp-medium} {
-			font-size: 8px;
+			font-size: 7px;
 			line-height: 9px;
 		}
 	}
@@ -159,6 +173,9 @@ header {
 			display: inline-block;
 			margin: 0 10px;
 			position: relative;
+			@media #{$bp-medium} {
+			      margin: 0 5px;
+			}
 			&:first-child {
 				padding-left: 20px;
 				&:before {
@@ -179,6 +196,9 @@ header {
 						top: -2px;
 						left: -32px;
 					}
+					@media #{$bp-medium} {
+					      left: -27px;
+					}
 				}
 				&:after {
 					content: '';
@@ -198,6 +218,9 @@ header {
 						bottom: -3px;
 						left: -32px;
 					}	
+					@media #{$bp-medium} {
+					      left: -27px;
+					}
 				}
 
 			}
@@ -222,6 +245,9 @@ header {
 						top: -2px;
 						right: -32px;
 					}
+					@media #{$bp-medium} {
+					      right: -27px;
+					}
 				}
 				&:after {
 					content: '';
@@ -242,6 +268,9 @@ header {
 						bottom: -3px;
 						right: -32px;
 					}
+					@media #{$bp-medium} {
+					      right: -27px;
+					}
 				}
 
 			}
@@ -257,6 +286,10 @@ header {
 				@media #{$bp-large} {
 					font-size: 8px;
 					letter-spacing: 0.53px;
+				}
+				@media #{$bp-medium} {
+				      font-size: 6px;
+letter-spacing: 0.4px;
 				}
 				&:hover {
 					text-decoration: underline !important;
@@ -278,6 +311,9 @@ header {
 				font-size: 18px;
 				line-height: 21px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 12px;
+			}
 		}
 		a.link {
 			color: #d1b38c;
@@ -295,6 +331,11 @@ header {
 				font-size: 11px;
 				letter-spacing: 0.96px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 9px;
+letter-spacing: 0.79px;
+margin-top: 0;
+			}
 		}
 	}
 
@@ -302,6 +343,9 @@ header {
 		padding-top: 60px;
 		@media #{$bp-blarge} {
 			padding-top: 38px;
+		}
+		@media #{$bp-medium} {
+		      padding-top: 20px;
 		}
 		h1 {
 			font-family: $f;
@@ -324,6 +368,12 @@ header {
 				letter-spacing: 7.8px;
 				margin-top: 43px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 38px;
+letter-spacing: 6.18px;
+line-height: 40px;
+margin-top: 35px;
+			}
 		}
 		h4 {
 			text-align: left;
@@ -344,6 +394,11 @@ header {
 				letter-spacing: 3.5px;
 				line-height: 28px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 14px;
+letter-spacing: 2.23px;
+line-height: 17px;
+			}
 		}
 		h6 {
 			text-align: left;
@@ -359,6 +414,11 @@ header {
 				line-height: 16px;
 				margin-top: 20px;
 				letter-spacing: 1.28px;
+			}
+			@media #{$bp-medium} {
+			      font-size: 10px;
+letter-spacing: 1.07px;
+line-height: 16px;
 			}
 		}
 	}
@@ -377,8 +437,17 @@ header {
 	@media #{$bp-large} {
 		padding: 60px 0 65px;
 	}
+	@media #{$bp-medium} {
+	      padding: 50px 0;
+	}
 	.button {
 		padding: 0 42px;
+		@media #{$bp-blarge} {
+		      padding: 0 35px;
+		}
+		@media #{$bp-medium} {
+		      padding: 0 20px;
+		}
 	}
 	&>.container:first-child {
 		position: relative;
@@ -403,6 +472,11 @@ header {
 			letter-spacing: 3.18px;
 			line-height: 24px;
 		}
+		@media #{$bp-medium} {
+		      font-size: 14px;
+letter-spacing: 2.23px;
+line-height: 18px;
+		}
 	}
 	.title-1 {
 		text-align: left;
@@ -418,6 +492,11 @@ header {
 			letter-spacing: 2.31px;
 			margin: 10px 0;
 		}
+		@media #{$bp-medium} {
+		      font-size: 14px;
+letter-spacing: 1.8px;
+margin: 5px 0;
+		}
 	}
 	.p-sec-1 {
 		font-family: $bi;
@@ -432,6 +511,10 @@ header {
 		@media #{$bp-large} {
 			font-size: 11px;
 			line-height: 13px;
+		}
+		@media #{$bp-medium} {
+		      font-size: 8px;
+line-height: 10px;
 		}
 	}
 	.plus {
@@ -458,6 +541,9 @@ header {
 			@media #{$bp-large} {
 				left: 201px;
 			}
+			@media #{$bp-medium} {
+			      left: 166px;
+			}
 			.bg-1 {
 				left: -328px;
 				@media #{$bp-blarge} {
@@ -465,6 +551,9 @@ header {
 				}
 				@media #{$bp-large} {
 					left: -197px;
+				}
+				@media #{$bp-medium} {
+				      left: -162px;
 				}
 			}
 		}
@@ -478,6 +567,10 @@ header {
 			@media #{$bp-large} {
 				left: 204px;
 				bottom: 148px;
+			}
+			@media #{$bp-medium} {
+				    left: 158px;
+    bottom: 120px;
 			}
 			.bg-1 {
 				left: 96px;
@@ -510,6 +603,10 @@ header {
 				left: 435px;
 				bottom: 259px;
 			}
+			@media #{$bp-medium} {
+			     left: 356px;
+    bottom: 193px;
+			}
 			.bg-1 {
 				left: -55px !important;
 				width: 184px;
@@ -518,6 +615,9 @@ header {
 				}
 				@media #{$bp-large} {
 					left: -32px!important;
+				}
+				@media #{$bp-medium} {
+				      width: 131px;
 				}
 				&:before {
 					left: 0;
@@ -547,6 +647,10 @@ header {
 				left: 423px;
 				bottom: 182px;
 			}
+			@media #{$bp-medium} {
+			    left: 352px;
+    bottom: 137px;      
+			}
 			.bg-1 {
 				left: 96px;
 				@media #{$bp-blarge} {
@@ -569,6 +673,9 @@ header {
 					}
 					@media #{$bp-large} {
 						margin-left: 37px;
+					}
+					@media #{$bp-medium} {
+					      width: 170px;
 					}
 					&.top-r {
 						&:before {
@@ -589,6 +696,11 @@ header {
 				left: 424px;
 				bottom: 92px;
 			}
+			@media #{$bp-medium} {
+			      left: 362px;
+    bottom: 73px;
+
+			}
 			.bg-1 {
 				left: 96px;
 				@media #{$bp-blarge} {
@@ -612,6 +724,9 @@ header {
 					@media #{$bp-large} {
 						margin-left: 37px;
 					}
+					@media #{$bp-medium} {
+					      width: 160px;
+					}
 				}
 			}
 		}
@@ -626,6 +741,10 @@ header {
 				left: 719px;
 				bottom: 120px;
 			}
+			@media #{$bp-medium} {
+			          left: 527px;
+    bottom: 99px;
+			}
 			.bg-1 {
 				bottom: auto;
 				top: 100%;
@@ -639,6 +758,9 @@ header {
 				@media #{$bp-large} {
 					margin-top: 35px;
 					left: 60px;
+				}
+				@media #{$bp-medium} {
+				      width: 160px;
 				}
 				&:before {
 					left: -63px;
@@ -661,6 +783,10 @@ header {
 				left: 755px;
 				bottom: 383px;
 			}
+			@media #{$bp-medium} {
+			      left: 576px;
+    bottom: 344px;
+			}
 			.bg-1 {
 				left: -55px !important;
 				width: 184px;
@@ -669,6 +795,9 @@ header {
 				}
 				@media #{$bp-large} {
 					left: -32px!important;
+				}
+				@media #{$bp-medium} {
+				      width: 160px;
 				}
 				&:before {
 					left: 0;
@@ -721,6 +850,12 @@ header {
 					margin-bottom: 39px;
 					left: 38px;
 				}
+				@media #{$bp-medium} {
+				      font-size: 7px;
+line-height: 8px;
+padding: 10px;
+width: 160px;
+				}
 				i {
 					display: inline-block;
 					font-style: normal;
@@ -735,6 +870,10 @@ header {
 						font-size: 12px;
 						line-height: 14px;
 						margin-bottom: 3px;
+					}
+					@media #{$bp-medium} {
+					      font-size: 9px;
+line-height: 10px;
 					}
 				}
 				em {
@@ -756,6 +895,11 @@ header {
 					@media #{$bp-large} {
 						font-size: 10px;
 						line-height: 12px;
+					}
+					@media #{$bp-medium} {
+					      padding-left: 10px;
+					      font-size: 6px;
+line-height: 8px;
 					}
 					&:before {
 						content: '';
@@ -844,6 +988,12 @@ header {
 					width: 165px;
 					padding: 7px 3px;
 					margin-bottom: 34px;
+				}
+				@media #{$bp-medium} {
+				      font-size: 6px;
+letter-spacing: 0.53px;
+line-height: 8px;
+width: 131px;
 				}
 				&.top-l {
 					&:before {
@@ -981,9 +1131,17 @@ header {
 			padding-top: 70px;
 			padding-bottom: 15px;
 		}
+		@media #{$bp-medium} {
+		      padding-top: 40px;
+		      padding-bottom: 10px;
+		}
 		.title {
 			color: rgba(255, 210, 151,.6);
 			letter-spacing: 4px;
+			@media #{$bp-medium} {
+			      font-size: 18px;
+letter-spacing: 2.12px;
+			}
 		}
 		.wrapp-img {
 			display: inline-block;
@@ -996,6 +1154,10 @@ header {
 				@media #{$bp-large} {
 					width: 90px;
 					height: 90px;
+				}
+				@media #{$bp-medium} {
+				      width: 66px;
+				      height: 66px;
 				}
 			}
 
@@ -1011,6 +1173,9 @@ header {
 				@media #{$bp-large} {
 					max-width: 412px;
 				}
+				@media #{$bp-medium} {
+				      max-width: 300px;
+				}
 			}
 		}
 		ul {
@@ -1020,6 +1185,9 @@ header {
 			}
 			@media #{$bp-large} {
 				padding-top: 90px;
+			}
+			@media #{$bp-medium} {
+			      padding-top: 70px;
 			}
 			&.text-r {
 				li {
@@ -1063,6 +1231,12 @@ header {
 					letter-spacing: 0.79px;
 					line-height: 15px;
 					margin-bottom: 50px;
+				}
+				@media #{$bp-medium} {
+				      font-size: 6px;
+letter-spacing: 0.61px;
+line-height: 9px;
+margin-bottom: 40px;
 				}
 				&.active {
 					color: rgb(204, 166, 84);
@@ -1123,6 +1297,11 @@ header {
 		font-size: 36px;
 		letter-spacing: 7.35px;
 	}
+	@media #{$bp-medium} {
+	      font-size: 26px;
+letter-spacing: 5.31px;
+line-height: 34px;
+	}
 }
 .text-sm {
 	color: white;
@@ -1141,6 +1320,12 @@ header {
 		letter-spacing: 1.23px;
 		line-height: 20px;
 	}
+	@media #{$bp-medium} {
+	      font-size: 8px;
+letter-spacing: 0.82px;
+line-height: 24px;
+line-height: 24px;
+	}
 }
 
 
@@ -1155,12 +1340,20 @@ header {
 			line-height: 50px;
 			letter-spacing: 6.98px;
 		}
+		@media #{$bp-medium} {
+		      font-size: 26px;
+letter-spacing: 4.12px;
+line-height: 30px;
+		}
 	}
 	@media #{$bp-blarge} {
 		padding: 100px 0 80px;
 	}
 	@media #{$bp-large} {
 		padding: 75px 0;
+	}
+	@media #{$bp-medium} {
+	      padding: 70px 0 60px;
 	}
 	.button {
 		padding: 0 42px;
@@ -1172,6 +1365,9 @@ header {
 		@media #{$bp-large} {
 			margin-top: 20px;
 			padding: 0 17px;
+		}
+		@media #{$bp-medium} {
+		      margin-top: 10px;
 		}
 	}
 	.line-bottom {
@@ -1189,6 +1385,11 @@ header {
 			font-size: 11px;
 			font-weight: 400;
 			margin: 30px 0 20px;
+		}
+		@media #{$bp-medium} {
+		      font-size: 8px;
+letter-spacing: 0.7px;
+margin: 20px 0 10px;
 		}
 		&:hover {
 			cursor: pointer;
@@ -1211,6 +1412,10 @@ header {
 				line-height: 24px;
 				margin-top: 8px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 10px;
+			      letter-spacing: 1px;
+			}
 			&+i {
 				color: rgb(106, 106, 106);
 				font-size: 18px;
@@ -1229,6 +1434,10 @@ header {
 					line-height: 16px;
 					margin-top: 12px;
 				}
+				@media #{$bp-medium} {
+				      font-size: 11px;
+line-height: 12px;
+				}
 			}
 		}
 	}
@@ -1238,6 +1447,9 @@ header {
 		border-collapse: collapse;
 		@media #{$bp-blarge} {
 			margin-top: 60px;
+		}
+		@media #{$bp-medium} {
+		      margin-top: 30px;
 		}
 		&.t1 {
 			tr:first-child {
@@ -1258,6 +1470,10 @@ header {
 						font-size: 13px;
 						letter-spacing: 1.14px;
 					}
+					@media #{$bp-medium} {
+					      font-size: 9px;
+letter-spacing: 0.79px;
+					}
 					img {
 						margin-right: 45px;
 						@media #{$bp-blarge} {
@@ -1268,6 +1484,9 @@ header {
 						@media #{$bp-large} {
 							width: 53px;
 							margin-right: 15px;
+						}
+						@media #{$bp-medium} {
+						      width: 43px;
 						}
 					}
 					&:first-child {
@@ -1287,6 +1506,9 @@ header {
 			// display: none;
 			height: 0;
 			margin-top: 50px;
+			@media #{$bp-medium} {
+			      margin-top: 20px;
+			}
 			tr:last-child {
 				td {
 					border-bottom: 1px solid rgba(229, 229, 229, .8);
@@ -1315,6 +1537,11 @@ header {
 					letter-spacing: 0.86px;
 					padding: 7px 15px 7px;
 				}
+				@media #{$bp-medium} {
+				      font-size: 9px;
+letter-spacing: 0.64px;
+padding: 4px 10px;
+				}
 				&:first-child {
 					width: 23.3%;
 					color: rgb(61, 61, 61);
@@ -1328,6 +1555,10 @@ header {
 					@media #{$bp-large} {
 						font-size: 11px;
 						letter-spacing: 0.55px;
+					}
+					@media #{$bp-medium} {
+					      font-size: 8px;
+letter-spacing: 0.4px;
 					}
 				}
 			}
@@ -1370,6 +1601,9 @@ a:hover {
 	@media #{$bp-blarge} {
 		padding-bottom: 50px;
 	}
+	@media #{$bp-medium} {
+	      padding-bottom: 40px;
+	}
 	hr {
 		width: 85%;
 		display: inline-block;
@@ -1385,6 +1619,9 @@ a:hover {
 		@media #{$bp-large} {
 			margin-top: 35px;
 		}
+		@media #{$bp-medium} {
+		      margin-top: 20px;
+		}
 	}
 	h5 {
 		margin-top: 10px;
@@ -1398,11 +1635,18 @@ a:hover {
 		@media #{$bp-large} {
 			padding-bottom: 35px;
 		}
+		@media #{$bp-medium} {
+		      padding-bottom: 25px;
+		      padding-top: 40px;
+		}
 	}
 	.col4 {
 		margin-top: 59px;
 		@media #{$bp-large} {
 			margin-top: 35px;
+		}
+		@media #{$bp-medium} {
+		      margin-top: 15px;
 		}
 		.wrapp-icon-1 {
 			height: 65px;
@@ -1498,6 +1742,10 @@ a:hover {
 				line-height: 18px;
 				margin-top: 8px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 10px;
+line-height: 13px;
+			}
 		}
 	}
 }
@@ -1516,6 +1764,9 @@ a:hover {
 	@media #{$bp-large} {
 		padding: 65px 0 75px;
 	}
+	@media #{$bp-medium} {
+	      padding: 48px 0 58px;
+	}
 	.wr-mh-1 {
 		@media #{$bp-blarge} {
 			margin: 0 -33px;
@@ -1529,6 +1780,9 @@ a:hover {
 		padding: 0px 25px;
 		form {
 			margin-top: 29px;
+			@media #{$bp-medium} {
+			      margin-top: 20px;
+			}
 		}
 		@media #{$bp-blarge} {
 			padding: 0 10px;
@@ -1548,7 +1802,11 @@ a:hover {
 			letter-spacing: 5.57px;
 			line-height: 38px;
 		}
-
+@media #{$bp-medium} {
+      font-size: 16px;
+letter-spacing: 2.78px;
+line-height: 19px;
+}
 	}
 	.prise-bg-1 {
 		background-color: rgb(34, 34, 34);
@@ -1575,6 +1833,9 @@ a:hover {
 				margin-top: 50px;
 				max-width: 173px;
 			}
+			@media #{$bp-medium} {
+			      max-width: 129px;
+			}
 		}
 	}
 	.prise-bg-2 {
@@ -1583,6 +1844,9 @@ a:hover {
 		padding-bottom: 20px;
 		@media #{$bp-blarge} {
 			padding-top: 33px;
+		}
+		@media #{$bp-medium} {
+		      padding-top: 25px;
 		}
 	}
 }
@@ -1602,6 +1866,9 @@ a:hover {
 	}
 	@media #{$bp-large} {
 		padding: 45px 0 50px;
+	}
+	@media #{$bp-medium} {
+	      padding: 45px 0 40px;
 	}
 	h2 {
 		color: rgb(157, 157, 157);
@@ -1632,6 +1899,10 @@ a:hover {
 			line-height: 16px;
 			margin-top: 10px;
 		}
+		@media #{$bp-medium} {
+		      font-size: 11px;
+line-height: 12px;
+		}
 	}
 	.slider-1 {
 		margin-top: 120px;
@@ -1640,6 +1911,9 @@ a:hover {
 		}
 		@media #{$bp-large} {
 			margin-top: 55px;
+		}
+		@media #{$bp-medium} {
+		      margin-top: 40px;
 		}
 		.left-block {
 			width: 26%;
@@ -1693,6 +1967,10 @@ a:hover {
 					padding-left: 30px;
 					padding-right: 30px;
 				}
+				@media #{$bp-medium} {
+				      padding-left: 25px;
+				      padding-right: 25px;
+				}
 				&:last-child {
 					margin-bottom: 0;
 				}
@@ -1716,6 +1994,10 @@ a:hover {
 					font-size: 18px;
 					letter-spacing: 0.67px;
 					line-height: 24px;
+				}
+				@media #{$bp-medium} {
+				      font-size: 12px;
+letter-spacing: 0.45px;
 				}
 				&:after {
 					content: '';
@@ -1746,6 +2028,10 @@ a:hover {
 				@media #{$bp-large} {
 					font-size: 12px;
 					line-height: 14px;
+				}
+				@media #{$bp-medium} {
+				      font-size: 8px;
+line-height: 10px;
 				}
 			}
 		}
@@ -1839,11 +2125,25 @@ a:hover {
 	@media #{$bp-large} {
 	      padding: 45px 0;
 	}
+	@media #{$bp-medium} {
+	      padding: 30px 0;
+	}
+	.pages {
+		@media #{$bp-medium} {
+		      font-size: 26px;
+		      em {
+		      	font-size: 11px;
+		      }
+		}
+	}
 	.container {
 		padding-bottom: 100px;
 		position: relative;
 		@media #{$bp-blarge} {
 			padding-bottom: 80px;
+		}
+		@media #{$bp-medium} {
+		      padding-bottom: 55px;
 		}
 		&:after{
 			content: '';
@@ -1879,6 +2179,14 @@ a:hover {
 		      padding-top: 35px;
 		      padding-bottom: 40px;
 		}
+		@media #{$bp-medium} {
+			padding-right: 9px;
+		      padding-top: 25px;
+		      padding-bottom: 30px;
+		      line-height: 10px;
+		      br {
+		      }
+		}
 		.slider-2-left-side {
 			float: left;
 			clear: left;
@@ -1893,6 +2201,10 @@ a:hover {
 			@media #{$bp-large} {
 			      padding-right: 30px;
 			      padding-left: 50px;
+			}
+			@media #{$bp-medium} {
+				padding-left: 35px;
+				width: 43%;
 			}
 			hr {
 				height: 1px;
@@ -1915,6 +2227,10 @@ a:hover {
 				      font-size: 12px;
 line-height: 16px;
 				}
+@media #{$bp-medium} {
+      font-size: 8px;
+line-height: 11px;
+}
 			}
 			.header {
 				color: rgb(85, 85, 85);
@@ -1929,6 +2245,10 @@ line-height: 16px;
 				      font-size: 13px;
 line-height: 16px;
 				}
+				@media #{$bp-medium} {
+				      font-size: 10px;
+line-height: 12px;
+				}
 			}
 			.dsc {
 				color: rgb(209, 179, 140);
@@ -1939,6 +2259,9 @@ line-height: 16px;
 				}
 				@media #{$bp-large} {
 				      font-size: 12px;
+				}
+				@media #{$bp-medium} {
+				      font-size: 9px;
 				}
 				&+.text-md {
 					margin-top: 20px;
@@ -1962,6 +2285,10 @@ line-height: 16px;
 line-height: 14px;
 margin-top: 2px;
 				}
+				@media #{$bp-medium} {
+				      font-size: 8px;
+line-height: 10px;
+				}
 			}
 			.button {
 				padding: 0 20px;
@@ -1973,6 +2300,13 @@ margin-top: 2px;
 				      font-size: 10px;
 				      padding: 0 10px;
 				      letter-spacing: 0;
+				}
+				@media #{$bp-medium} {
+				      font-size:8px;
+letter-spacing: 0.7px;
+padding: 0 5px;
+height: 27px;
+line-height: 27px;
 				}
 			}
 			.price {
@@ -1987,11 +2321,18 @@ margin-top: 2px;
 				@media #{$bp-large} {
 				      font-size: 18px;
 				}
+				@media #{$bp-medium} {
+				      font-size: 14px;
+				      line-height: 18px;
+				}
 			}
 			.price-button {
 				margin-top: 50px;
 				@media #{$bp-blarge} {
 					margin-top: 20px;
+				}
+				@media #{$bp-medium} {
+				      margin-top: 10px;
 				}
 			}
 		}
@@ -2003,7 +2344,8 @@ margin-top: 2px;
 			@media #{$bp-blarge} {
 				width: 53%;
 			}
-			@media #{$bp-large} {
+			@media #{$bp-medium} {
+			      width: 52%;
 			}
 			.bx-pager.bx-default-pager {
 				bottom: 25px;
@@ -2044,6 +2386,9 @@ margin-top: 2px;
 
 		.bx-pager.bx-default-pager {
 			bottom: -100px;
+			@media #{$bp-medium} {
+			      bottom: -65px;
+			}
 		}
 
 		.bx-wrapper .bx-pager.bx-default-pager a.active {
@@ -2080,6 +2425,9 @@ margin-top: 2px;
 			}
 			@media #{$bp-large} {
 			      top: (382-98px)/2;
+			}
+			@media #{$bp-medium} {
+			      top: (300-98px)/2;
 			}
 			a {
 				display: block;
@@ -2203,6 +2551,14 @@ margin-top: 2px;
 		      	}
 		      }
 		}
+		@media #{$bp-medium} {
+		      .pages {
+		      	font-size: 20px;
+		      	em {
+		      		font-size: 9px;
+		      	}
+		      }
+		}
 	}
 	.item-slide {
 		width: 490px;
@@ -2222,6 +2578,11 @@ margin-top: 2px;
 		      padding: 30px 30px 10px;
 		      height: 460px;
 		      width: 300px;
+		}
+		@media #{$bp-medium} {
+		      padding: 25px 25px 10px;
+		      height: 345px;
+		      width: 260px;
 		}
 		&.right-s {
 			float: right;
@@ -2248,6 +2609,11 @@ letter-spacing: 3.65px;
 line-height: 25px;
 margin-top: 5px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 16px;
+letter-spacing: 2.78px;
+line-height: 18px;
+			}
 		}
 		.slide-descr {
 			color: rgb(82, 82, 82);
@@ -2265,6 +2631,11 @@ margin-top: 5px;
 			      font-size: 12px;
 letter-spacing: 2.19px;
 line-height: 14px;
+			}
+			@media #{$bp-medium} {
+			      font-size: 8px;
+letter-spacing: 1.46px;
+line-height: 10px;
 			}
 		}
 		hr {
@@ -2292,6 +2663,11 @@ line-height: 14px;
 letter-spacing: 2.64px;
 line-height: 22px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 16px;
+letter-spacing: 2.35px;
+line-height: 17px;
+			}
 		}
 		p {
 			color: rgb(61, 61, 61);
@@ -2306,14 +2682,25 @@ line-height: 22px;
 			      font-size: 12px;
 line-height: 14px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 8px;
+line-height: 10px;
+			}
 		}
 		.custom-wrapp {
 			position: absolute;
 			bottom: 34px;
 			right: 50px;
 			margin: 0 -8px;
+			@media #{$bp-blarge} {
+			      right: 35px;
+			}
 			@media #{$bp-large} {
 			      bottom: 20px;
+			      right: 30px;
+			}
+			@media #{$bp-medium} {
+			      right: 25px;
 			}
 			a {
 				display: inline-block;
@@ -2353,9 +2740,15 @@ line-height: 14px;
 			position: absolute;
 			left: 50px;
 			bottom: 34px;
+			@media #{$bp-blarge} {
+			      left: 35px;
+			}
 			@media #{$bp-large} {
 			      bottom: 20px;
 			      left: 30px;
+			}
+			@media #{$bp-medium} {
+			      left: 25px;
 			}
 			a {
 				display: inline-block;
@@ -2402,6 +2795,9 @@ line-height: 14px;
 	@media #{$bp-large} {
 	      padding: 60px 0;
 	}
+	@media #{$bp-medium} {
+	      padding: 45px 0;
+	}
 	.wrapp-inline {
 		input {
 			width: 55px;
@@ -2434,6 +2830,9 @@ line-height: 14px;
 		@media #{$bp-large} {
 		      margin: 50px auto 0;
 		}
+		@media #{$bp-medium} {
+		      margin: 40px auto 0;
+		}
 	}
 	h5 {
 		margin-top: 20px;
@@ -2448,6 +2847,9 @@ line-height: 14px;
 		}
 		@media #{$bp-large} {
 		      margin-top: 50px;
+		}
+		@media #{$bp-medium} {
+		      margin-top: 35px;
 		}
 	}
 	input.input-popup {
@@ -2482,6 +2884,9 @@ line-height: 14px;
 		@media #{$bp-large} {
 		      margin: 50px auto 10px;
 		}
+		@media #{$bp-medium} {
+		      margin: 30px auto 10px;
+		}
 		div {
 			position: absolute;
 			left: 0;
@@ -2497,6 +2902,15 @@ line-height: 14px;
 			color: rgb(61, 61, 61);
 			font-size: 21px;
 			line-height: 21px;
+			@media #{$bp-blarge} {
+			      font-size: 19px;
+			}
+			@media #{$bp-large} {
+			      font-size: 18px;
+			}
+			@media #{$bp-medium} {
+			      font-size: 14px;
+			}
 		}
 	}
 	.main-choose {
@@ -2506,6 +2920,9 @@ line-height: 14px;
 @media #{$bp-large} {
       padding-top: 60px;
 }
+@media #{$bp-medium} {
+      padding-top: 45px;
+}
 		h3 {
 			margin-top: 35px;
 			margin-bottom: 0;
@@ -2513,6 +2930,11 @@ line-height: 14px;
 			      font-size: 20px;
 letter-spacing: 3.48px;
 line-height: 28px;
+			}
+			@media #{$bp-medium} {
+			      font-size: 14px;
+letter-spacing: 1.3px;
+line-height: 18px;
 			}
 		}
 		.left-choose {
@@ -3847,12 +4269,18 @@ line-height: 28px;
 	@media #{$bp-large} {
 	      padding: 104px 0;
 	}
+	@media #{$bp-medium} {
+	      padding: 78px 0;
+	}
 	.left-text {
 		padding-top: 95px;
 		width: 40%;
 		float: left;
 		@media #{$bp-large} {
 		      padding-top: 70px;
+		}
+		@media #{$bp-medium} {
+		      padding-top: 55px;
 		}
 		h2 {
 			text-align: left;
@@ -3867,6 +4295,11 @@ line-height: 28px;
 letter-spacing: 6.94px;
 line-height: 42px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 24px;
+letter-spacing: 4.9px;
+line-height: 25px;
+			}
 		}
 		h5 {
 			text-align: left;
@@ -3880,6 +4313,11 @@ line-height: 42px;
 			      font-size: 14px;
 line-height: 20px;
 letter-spacing: 3.53px;
+			}
+			@media #{$bp-medium} {
+			      font-size: 11px;
+letter-spacing: 2.77px;
+line-height: 16px;
 			}
 		}
 	}
@@ -3941,6 +4379,9 @@ letter-spacing: 3.53px;
 	@media #{$bp-large} {
 	      padding: 45px 0 50px;
 	}
+	@media #{$bp-medium} {
+	      padding: 41px 0 53px;
+	}
 	.call-box {
 		width: 535px;
 		background-color: white;
@@ -3957,6 +4398,9 @@ letter-spacing: 3.53px;
 		      padding-top: 45px;
 		      padding-bottom: 50px;
 		}
+		@media #{$bp-medium} {
+		      padding: 35px 10px;
+		}
 		a.button {
 			padding: 0 60px;
 			margin-top: 130px;
@@ -3966,6 +4410,9 @@ letter-spacing: 3.53px;
 			}
 			@media #{$bp-large} {
 			      padding: 0 22px;
+			}
+			@media #{$bp-medium} {
+			      padding: 0 12px;
 			}
 		}
 		.call-box-title {
@@ -3984,6 +4431,11 @@ letter-spacing: 3.53px;
 			      font-size: 22px;
 letter-spacing: 3.83px;
 line-height: 30px;
+			}
+			@media #{$bp-medium} {
+			      font-size: 16px;
+letter-spacing: 2.78px;
+line-height: 18px;
 			}
 		}
 		.call-title-sm {
@@ -4004,6 +4456,11 @@ line-height: 30px;
 font-weight: 400;
 line-height: 17px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 10px;
+letter-spacing: 1.93px;
+line-height: 13px;
+			}
 		}
 	}
 }
@@ -4017,6 +4474,9 @@ line-height: 17px;
 	@media #{$bp-large} {
 	      margin: 0 -25px !important;
 	}
+	@media #{$bp-medium} {
+	      margin: 0 -15px !important;
+	}
 }
 
 .section-map {
@@ -4027,6 +4487,9 @@ line-height: 17px;
 	}
 	@media #{$bp-large} {
 	      padding: 50px 0;
+	}
+	@media #{$bp-medium} {
+	      padding: 35px 0;
 	}
 	.map-height > div {
 		position: relative;
@@ -4047,6 +4510,9 @@ line-height: 17px;
 		@media #{$bp-large} {
 		      padding: 45px 30px 45px;
 		}
+		@media #{$bp-medium} {
+		      padding: 35px 24px;
+		}
 	}
 	.map-title {
 		color: rgb(209, 179, 140);
@@ -4064,6 +4530,10 @@ line-height: 17px;
 letter-spacing: 0.59px;
 line-height: 18px;
 		}
+		@media #{$bp-medium} {
+		      font-size: 12px;
+line-height: 13px;
+		}
 	}
 	p {
 		color: rgb(55, 55, 55);
@@ -4077,6 +4547,10 @@ line-height: 18px;
 		@media #{$bp-large} {
 		      font-size: 12px;
 line-height: 16px;
+		}
+		@media #{$bp-medium} {
+		      font-size: 8px;
+line-height: 10px;
 		}
 	}
 	ul {
@@ -4094,6 +4568,10 @@ line-height: 16px;
 			@media #{$bp-large} {
 			      font-size: 12px;
 line-height: 16px;
+			}
+			@media #{$bp-medium} {
+			      font-size: 8px;
+line-height: 12px;
 			}
 		}
 	}
@@ -4139,6 +4617,11 @@ line-height: 16px;
 letter-spacing: 3.83px;
 line-height: 28px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 16px;
+letter-spacing: 2.78px;
+line-height: 21px;
+			}
 		}
 		.title-l-sm {
 			color: rgb(157, 157, 157);
@@ -4155,6 +4638,10 @@ line-height: 28px;
 			@media #{$bp-large} {
 			      font-size: 14px;
 line-height: 16px;
+			}
+			@media #{$bp-medium} {
+			      font-size: 10px;
+line-height: 13px;
 			}
 		}
 		.css-table {
@@ -4184,6 +4671,11 @@ line-height: 16px;
 					      height: 104px;
 					      background-size: 109px 104px;
 					}
+					@media #{$bp-medium} {
+					      width: 81px;
+					      height: 78px;
+					      background-size: 81px 78px;
+					}
 					span {
 						display: block;
 						text-align: center;
@@ -4196,6 +4688,9 @@ line-height: 16px;
 						top: 50%;
 						transform: translateY(-50%);
 						font-family: $f;
+						@media #{$bp-medium} {
+						      font-size: 28px;
+						}
 					}
 				}
 			}
@@ -4234,6 +4729,9 @@ line-height: 16px;
 			@media #{$bp-large} {
 			      padding: 55px 10px 70px;
 			}
+			@media #{$bp-medium} {
+			      padding: 30px 5px 40px;
+			}
 		}
 		input:first-child {
 			margin-bottom: 10px;
@@ -4265,6 +4763,10 @@ footer {
 				      width: 114px;
 				      height: 29px;
 				}
+				@media #{$bp-medium} {
+				      width: 85px;
+				      height: 22px;
+				}
 			}
 		}
 	}
@@ -4272,6 +4774,9 @@ footer {
 		padding-top: 10px;
 		float: right;
 		text-align: left;
+		@media #{$bp-medium} {
+		      padding-top: 0;
+		}
 		.phone-footer {
 			color: rgb(61, 61, 61);
 			font-size: 22px;
@@ -4284,6 +4789,9 @@ footer {
 			@media #{$bp-large} {
 			      font-size: 18px;
 line-height: 21px;
+			}
+			@media #{$bp-medium} {
+			      font-size: 12px;
 			}
 		}
 		.link-footer-call	{
@@ -4298,6 +4806,10 @@ line-height: 21px;
 				font-size: 11px;
 				letter-spacing: 0.96px;
 			}
+			@media #{$bp-medium} {
+			      font-size: 8px;
+letter-spacing: 0.7px;
+			}
 		}
 		.dev {
 			color: rgb(61, 61, 61);
@@ -4306,6 +4818,10 @@ line-height: 21px;
 			margin-top: 30px;
 			@media #{$bp-blarge} {
 				margin-top: 20px;
+			}
+			@media #{$bp-medium} {
+			      font-size: 8px;
+			      margin-top: 8px;
 			}
 		}
 	}
@@ -4320,6 +4836,9 @@ line-height: 21px;
 		@media #{$bp-large} {
 		      font-size: 11px;
 		}
+		@media #{$bp-medium} {
+		      font-size: 8px;
+		}
 	}
 	.politic {
 		text-decoration: underline;
@@ -4329,6 +4848,9 @@ line-height: 21px;
 		line-height: 14px;
 		margin-top: 8px;
 		margin-left: 7px;
+		@media #{$bp-medium} {
+		      font-size: 10px;
+		}
 	}
 	.l-foot-wrapp {
 		&>div {
@@ -4346,6 +4868,10 @@ line-height: 21px;
 				@media #{$bp-large} {
 				      font-size: 10px;
 line-height: 12px;
+				}
+				@media #{$bp-medium} {
+				      font-size: 7px;
+line-height: 7px;
 				}
 			}
 		}

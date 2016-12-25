@@ -28,6 +28,11 @@ input:not([type=submit]) {
 	      line-height: 35px;
 	      font-size: 10px;
 	}
+	@media #{$bp-medium} {
+	      height: 28px;
+	      line-height: 28px;
+	      font-size: 7px;
+	}
 }
 
 [type=submit] {
@@ -56,6 +61,12 @@ input.error {
 	@media #{$bp-large} {
 	      padding: 45px 22px;
 	      width: 280px;
+	}
+	@media #{$bp-medium} {
+	      width: 250px;
+	}
+	@media #{$bp-medium} {
+	      padding: 30px 20px;
 	}
 	&.center-form {
 		margin-left: auto;
@@ -118,6 +129,10 @@ input.error {
 			padding-bottom: 50px;
 			padding-top: 45px;
 		}
+		@media #{$bp-medium} {
+		      padding-top: 30px;
+		      padding-bottom: 40px;
+		}
 	}
 	.form-title {
 		color: #3d3d3d;
@@ -136,6 +151,11 @@ line-height: 34px;
 letter-spacing: 3.83px;
 line-height: 24px;
 		}
+		@media #{$bp-medium} {
+		      font-size: 16px;
+letter-spacing: 2.78px;
+line-height: 18px;
+		}
 	}
 	.form-sm {
 		color: #3d3d3d;
@@ -153,6 +173,10 @@ margin: 20px 0;
 line-height: 14px;
 margin: 13px 0;
 		}
+		@media #{$bp-medium} {
+		      font-size: 8px;
+line-height: 10px;
+		}
 	}
 	.note {
 		color: #3d3d3d;
@@ -166,6 +190,10 @@ line-height: 14px;
 		}
 		@media #{$bp-large} {
 		      font-size: 11px;
+		}
+		@media #{$bp-medium} {
+		      font-size: 8px;
+line-height: 10px;
 		}
 	}
 	input {
@@ -190,6 +218,11 @@ line-height: 14px;
 		      margin-bottom: 13px;
 		      padding-left: 20px;
 		      font-size: 12px;
+		}
+		@media #{$bp-medium} {
+		      padding-left: 14px;
+		      font-size: 8px;
+		      height: 28px;
 		}
 	}
 }
