@@ -16,6 +16,11 @@ h2 {
 	font-family: $f;
 	text-transform: uppercase;
 	text-align: center;
+	@media #{$bp-blarge} {
+	      font-size: 44px;
+letter-spacing: 8.98px;
+line-height: 54px;
+	}
 }
 
 h5 {
@@ -24,6 +29,11 @@ h5 {
 	letter-spacing: 5.29px;
 	text-align: center;
 	text-transform: uppercase;
+	@media #{$bp-blarge} {
+	      font-size: 18px;
+line-height: 24px;
+letter-spacing: 3.29px;
+	}
 }
 
 .title {
@@ -33,6 +43,11 @@ h5 {
 	font-family: $f;
 	text-transform: uppercase;
 	text-align: center;
+	@media #{$bp-blarge} {
+	      font-size: 28px;
+letter-spacing: 3.29px;
+line-height: 34px;
+	}
 }
 
 .title-1 {
@@ -51,6 +66,9 @@ header {
 	padding-top: 40px;
 	padding-bottom: 65px;
 	text-align: left;
+	@media #{$bp-blarge} {
+	      padding-bottom: 55px;
+	}
 	.title {
 		letter-spacing: 5.41px;
 	}
@@ -68,6 +86,11 @@ header {
 		width: 174px;
 		height: 34px;
 		background-size: 174px 34px;
+		@media #{$bp-blarge} {
+			width: 132px;
+			height: 25px;
+			background-size: 132px 25px;
+		}
 	}
 	.logo-text {
 		display: inline-block;
@@ -77,12 +100,17 @@ header {
 		font-family: $book;
 		font-size: 13px;
 		line-height: 15px;
+		@media #{$bp-blarge} {
+			font-size: 12px;
+			line-height: 14px;
+			margin-left: 8px;
+		}
 	}
 	.nav {
 		text-align: center;
 		background-color: rgba(0,0,0, .3);
 		display: inline-block;
-		padding: 6px 0;
+		padding: 2px 0 3px;
 		li {
 			display: inline-block;
 			margin: 0 10px;
@@ -100,6 +128,13 @@ header {
 					border: 15px solid transparent;
 					border-right: 10px solid rgba(0,0,0, .3);
 					border-top-width: 0;
+					@media #{$bp-blarge} {
+						border: 12px solid transparent;
+						border-right: 10px solid rgba(0,0,0, .3);
+						border-top-width: 0;
+						top: -2px;
+						left: -32px;
+					}
 				}
 				&:after {
 					content: '';
@@ -112,6 +147,13 @@ header {
 					border: 15px solid transparent;
 					border-right: 10px solid rgba(0,0,0, .3);
 					border-bottom-width: 0;
+					@media #{$bp-blarge} {
+						border: 12px solid transparent;
+						border-right: 10px solid rgba(0,0,0, .3);
+						border-bottom-width: 0;
+						bottom: -3px;
+						left: -32px;
+					}	
 				}
 
 			}
@@ -128,6 +170,14 @@ header {
 					border: 15px solid transparent;
 					border-left: 10px solid rgba(0,0,0, .3);
 					border-top-width: 0;
+
+					@media #{$bp-blarge} {
+						border: 12px solid transparent;
+						border-left: 10px solid rgba(0,0,0, .3);
+						border-top-width: 0;
+						top: -2px;
+						right: -32px;
+					}
 				}
 				&:after {
 					content: '';
@@ -140,6 +190,14 @@ header {
 					border: 15px solid transparent;
 					border-left: 10px solid rgba(0,0,0, .3);
 					border-bottom-width: 0;
+
+					@media #{$bp-blarge} {
+						border: 12px solid transparent;
+						border-left: 10px solid rgba(0,0,0, .3);
+						border-bottom-width: 0;
+						bottom: -3px;
+						right: -32px;
+					}
 				}
 
 			}
@@ -149,6 +207,9 @@ header {
 				font-size: 12px;
 				letter-spacing: 0.8px;
 				text-transform: uppercase;
+				@media #{$bp-blarge} {
+					font-size: 10px;
+				}
 				&:hover {
 					text-decoration: underline !important;
 				}
@@ -162,6 +223,9 @@ header {
 			color: white;
 			font-size: 22px;
 			line-height: 21px;
+			@media #{$bp-blarge} {
+			      font-size: 20px;
+			}
 		}
 		a.link {
 			color: #d1b38c;
@@ -172,11 +236,17 @@ header {
 			display: inline-block;
 			font-family: $semi;
 			text-transform: uppercase;
+			@media #{$bp-blarge} {
+			      font-size: 11px;
+			}
 		}
 	}
 
 	.main-header {
 		padding-top: 60px;
+		@media #{$bp-blarge} {
+		      padding-top: 38px;
+		}
 		h1 {
 			font-family: $f;
 			color: white;
@@ -186,6 +256,12 @@ header {
 			text-align: left;
 			text-transform: uppercase;
 			margin-top: 82px;
+			@media #{$bp-blarge} {
+			      font-size: 59px;
+line-height: 64px;
+letter-spacing: 12.04px;
+margin-top: 65px;
+			}
 		}
 		h4 {
 			text-align: left;
@@ -196,6 +272,11 @@ header {
 			text-transform: uppercase;
 			font-family: $f;
 			margin-top: 20px;
+			@media #{$bp-blarge} {
+			      font-size: 28px;
+letter-spacing: 4.46px;
+line-height: 32px;
+			}
 		}
 		h6 {
 			text-align: left;
@@ -216,21 +297,38 @@ header {
 	background-size: cover;
 	padding-bottom: 110px;
 	padding-top: 80px;
+	@media #{$bp-blarge} {
+	      padding-top: 70px;
+	      padding-bottom: 60px;
+	}
 	.button {
 		padding: 0 42px;
 	}
 	&>.container:first-child {
 		position: relative;
 		padding-bottom: 500px;
+		@media #{$bp-blarge} {
+		      padding-bottom: 420px;
+		}
 	}
 	.title {
 		text-align: left;
 		letter-spacing: 5.41px;
+		@media #{$bp-blarge} {
+		      font-size: 25px;
+letter-spacing: 3.98px;
+line-height: 30px;
+		}
 	}
 	.title-1 {
 		text-align: left;
 		margin-top: 20px;
 		margin-bottom: 25px;
+		@media #{$bp-blarge} {
+		      font-size: 22px;
+line-height: 34px;
+margin: 15px 0 10px;
+		}
 	}
 	.p-sec-1 {
 		font-family: $bi;
@@ -238,6 +336,10 @@ header {
 		font-size: 16px;
 		margin-top: 0;
 		line-height: 20px;
+		@media #{$bp-blarge} {
+		      font-size: 14px;
+line-height: 18px;
+		}
 	}
 	.plus {
 		background: url('../img/plus.svg') center top no-repeat;
@@ -245,33 +347,62 @@ header {
 		height: 41px;
 		background-size: 41px 41px; 
 		position: absolute;
+		@media #{$bp-blarge} {
+		      width: 31px;
+		      height: 31px;
+		      background-size: 31px 31px;
+		}
 		&:hover {
 			cursor: pointer;
 		}
 		&.pos-1 {
-			left: 254px;
+			left: 328px;
 			bottom: 87px;	
+			@media #{$bp-blarge} {
+				left: 270px;
+				bottom: 40px;
+			}
 			.bg-1 {
 				left: -328px;
+				@media #{$bp-blarge} {
+					left: -267px;
+				}
 			}
 		}
 		&.pos-2 {
-			left: 371px;
+			left: 406px;
 			bottom: 97px;
+			@media #{$bp-blarge} {
+			          left: 310px;
+    bottom: 150px;
+			}
 			.bg-1 {
 				left: 96px;
+				@media #{$bp-blarge} {
+					left: 72px;
+				}
 				span {
 					right: 63px;
 					left: auto;
+					@media #{$bp-blarge} {
+					      right: 47px;
+					}
 				}
 			}
 		}
 		&.pos-3 {
-			left: 776px;
+			left: 880px;
 			bottom: 244px;
+			@media #{$bp-blarge} {
+			          left: 650px;
+    bottom: 259px;
+			}
 			.bg-1 {
 				left: -55px !important;
 				width: 184px;
+				@media #{$bp-blarge} {
+				      left: -42px !important;
+				}
 				&:before {
 					left: 0;
 				}
@@ -279,14 +410,24 @@ header {
 					right: 63px;
 					left: auto;
 					padding-right: 30px;
+					@media #{$bp-blarge} {
+					      right: 47px;
+					}
 				}
 			}
 		}
 		&.pos-4 {
-			left: 897px;
+			left: 1000px;
 			bottom: 255px;
+			@media #{$bp-blarge} {
+    left: 613px;
+    bottom: 192px;	
+    		}
 			.bg-1 {
 				left: 96px;
+				@media #{$bp-blarge} {
+				      left: 72px;
+				}
 				&:before {
 					left: 0;
 				}
@@ -296,19 +437,32 @@ header {
 					left: 100%;
 					margin-left: 63px;
 					padding-right: 30px;
+					@media #{$bp-blarge} {
+					      margin-left: 47px;
+					}
 					&.top-r {
 						&:before {
 							left: -63px;
+							@media #{$bp-blarge} {
+							      left: -46px;
+							}
 						}
 					}
 				}
 			}
 		}
 		&.pos-5 {
-			left: 1015px;
+			left: 1140px;
 			bottom: 122px;
+@media #{$bp-blarge} {
+          left: 613px;
+    bottom: 88px;
+}
 			.bg-1 {
 				left: 96px;
+				@media #{$bp-blarge} {
+				      left: 72px;
+				}
 				&:before {
 					left: 0;
 				}
@@ -318,36 +472,60 @@ header {
 					left: 100%;
 					margin-left: 63px;
 					padding-right: 30px;
+					@media #{$bp-blarge} {
+					      margin-left: 47px;
+					}
 					&.top-r {
 						&:before {
 							left: -63px;
+							@media #{$bp-blarge} {
+							      left: -46px;
+							}
 						}
 					}
 				}
 			}
 		}
 		&.pos-6 {
-			left: 1250px;
+			left: 1350px;
 			bottom: 160px;
+			@media #{$bp-blarge} {
+			          left: 981px;
+    bottom: 120px;
+			}
 			.bg-1 {
 				bottom: auto;
 				top: 100%;
 				margin-top: 55px;
 				left: 96px;
 				width: 184px;
+				@media #{$bp-blarge} {
+				          margin-top: 42px;
+				          left: 75px;
+				}
 				&:before {
 					left: -63px;
 					bottom: 100% !important;
 					top: auto !important;
+					@media #{$bp-blarge} {
+					      left: -47px;
+					}
 				}
 			}
 		}
 		&.pos-7 {
 			left: 1190px;
 			bottom: 536px;
+		@media #{$bp-blarge} {
+		      left: 943px;
+    bottom: 488px;
+		}
 			.bg-1 {
 				left: -55px !important;
 				width: 184px;
+				@media #{$bp-blarge} {
+				      left: -42px !important;
+				}
 				&:before {
 					left: 0;
 				}
@@ -355,6 +533,9 @@ header {
 					right: 63px;
 					left: auto;
 					padding-right: 30px;
+					@media #{$bp-blarge} {
+					      right: 46px;
+					}
 				}
 			}
 		}
@@ -378,6 +559,13 @@ header {
 				padding: 22px 45px 25px 22px;
 				bottom: 100%;
 				left: 63px;
+				@media #{$bp-blarge} {
+				      font-size: 12px;
+line-height: 14px;
+padding: 15px 20px;
+left: 47px;
+margin-bottom: 49px;
+				}
 				i {
 					display: inline-block;
 					font-style: normal;
@@ -401,6 +589,10 @@ header {
 					padding-left: 37px;
 					position: relative;
 					margin: 5px 0;
+					@media #{$bp-blarge} {
+					      font-size: 12px;
+line-height: 14px;
+					}
 					&:before {
 						content: '';
 						display: block;
@@ -423,6 +615,11 @@ header {
 						background-size: 63px 65px;
 						top: 100%;
 						left: 100%;
+						@media #{$bp-blarge} {
+						      width: 46px;
+						      height: 48px;
+						      background-size: 46px 48px;
+						}
 					}
 				}
 				&.top-r {
@@ -436,6 +633,11 @@ header {
 						background-size: 63px 65px;
 						top: 100%;
 						right: 100%;
+						@media #{$bp-blarge} {
+						      width: 46px;
+						      height: 48px;
+						      background-size: 46px 48px;
+						}
 					}
 				}
 			}
@@ -453,6 +655,15 @@ header {
 
 				bottom: 100%;
 				margin-bottom: 55px;
+				@media #{$bp-blarge} {
+				      font-size: 10px;
+line-height: 14px;
+letter-spacing: 0.88px;
+padding-left: 5px;
+padding-right: 5px;
+width: 225px;
+margin-bottom: 41px;
+				}
 				&.top-l {
 					&:before {
 						content: '';
@@ -463,6 +674,12 @@ header {
 						background-size: 63px 65px;
 						top: 100%;
 						right: -63px;
+							@media #{$bp-blarge} {
+						      width: 46px;
+						      height: 48px;
+						      background-size: 46px 48px;
+						      right: -46px;
+						}
 					}
 				}
 				&.top-r {
@@ -475,6 +692,12 @@ header {
 						background-size: 63px 65px;
 						top: 100%;
 						left: -63px;
+							@media #{$bp-blarge} {
+						      width: 46px;
+						      height: 48px;
+						      left: -45px;
+						      background-size: 46px 48px;
+						}
 					}
 				}
 			}
@@ -557,6 +780,10 @@ header {
 		background-size: cover;
 		padding-top: 105px;
 		padding-bottom: 40px;
+		@media #{$bp-blarge} {
+		      padding-top: 70px;
+		      padding-bottom: 15px;
+		}
 		.title {
 			color: rgba(255, 210, 151,.6);
 			letter-spacing: 4px;
@@ -577,6 +804,9 @@ header {
 				margin-left: auto;
 				margin-right: auto;
 				height: auto;
+				@media #{$bp-blarge} {
+				      max-width: 520px;
+				}
 			}
 		}
 		ul {
@@ -606,6 +836,12 @@ header {
 				font-family: $semi;
 				margin-bottom: 100px;
 				position: relative;
+
+				@media #{$bp-blarge} {
+				      font-size: 11px;
+letter-spacing: 0.96px;
+margin-bottom: 70px;
+				}
 				&.active {
 					color: rgb(204, 166, 84);
 					i {
@@ -628,6 +864,9 @@ header {
 	.sec-partners {
 		padding: 23px 0 20px;
 		background: #131313;
+		@media #{$bp-blarge} {
+		      padding: 11px 0;
+		}
 		.flex-wrapp {
 			display: flex;
 			flex-wrap: wrap;
@@ -651,6 +890,10 @@ header {
 	font-family: $f;
 	text-transform: uppercase;
 	letter-spacing: 8px;
+	@media #{$bp-blarge} {
+	      font-size: 42px;
+line-height: 60px;
+	}
 }
 .text-sm {
 	color: white;
@@ -659,6 +902,11 @@ header {
 	line-height: 24px;
 	text-transform: uppercase;
 	text-align: center;
+	@media #{$bp-blarge} {
+	      font-size: 12px;
+letter-spacing: 3.03px;
+line-height: 24px;
+	}
 }
 
 
@@ -667,9 +915,15 @@ header {
 
 .section-3 {
 	padding: 130px 0 110px;
+	@media #{$bp-blarge} {
+	      padding: 100px 0 80px;
+	}
 	.button {
 		padding: 0 42px;
 		margin-top: 40px;
+		@media #{$bp-blarge} {
+		      margin-top: 30px;
+		}
 	}
 	.line-bottom {
 		border-bottom: 1px solid rgba(229, 229, 229, .8);
@@ -682,6 +936,11 @@ header {
 		text-transform: uppercase;
 		margin-top: 40px;
 		margin-bottom: 30px;
+		@media #{$bp-blarge} {
+		      font-size: 11px;
+font-weight: 400;
+margin: 30px 0 20px;
+		}
 		&:hover {
 			cursor: pointer;
 			text-decoration: none;
@@ -697,6 +956,12 @@ header {
 			text-align: center;
 			text-transform: uppercase;
 			margin-top: 15px;
+			@media #{$bp-blarge} {
+			      font-size: 14px;
+letter-spacing: 3.53px;
+line-height: 24px;
+margin-top: 8px;
+			}
 			&+i {
 				color: rgb(106, 106, 106);
 				font-size: 18px;
@@ -705,6 +970,11 @@ header {
 				text-align: center;
 				margin-top: 42px;
 				display: block;
+				@media #{$bp-blarge} {
+				      font-size: 16px;
+line-height: 22px;
+margin-top: 20px;
+				}
 			}
 		}
 	}
@@ -712,6 +982,9 @@ header {
 		width: 100%;
 		margin-top: 90px;
 		border-collapse: collapse;
+		@media #{$bp-blarge} {
+		      margin-top: 60px;
+		}
 		&.t1 {
 			tr:first-child {
 				td {
@@ -721,8 +994,19 @@ header {
 					line-height: 18px;
 					padding: 34px 20px 20px;
 					border-right: 0px;
+					@media #{$bp-blarge} {
+					      font-size: 14px;
+					      padding: 15px;
+letter-spacing: 1px;
+line-height: 17px;
+					}
 					img {
 						margin-right: 45px;
+						@media #{$bp-blarge} {
+						      margin-right: 30px;
+						      width: 68px;
+						      height: auto;
+						}
 					}
 					&:first-child {
 						color: rgb(61, 61, 61);
@@ -759,11 +1043,21 @@ header {
 				text-transform: uppercase;
 				width: (100%-23.3%)/3;
 				vertical-align: middle;
+				@media #{$bp-blarge} {
+				      font-size: 14px;
+				          padding: 10px 20px 11px;
+letter-spacing: 1px;
+				}
 				&:first-child {
 					width: 23.3%;
 					color: rgb(61, 61, 61);
 					font-size: 13px;
 					letter-spacing: 0.8px;
+					@media #{$bp-blarge} {
+					      font-size: 12px;
+letter-spacing: 0.6px;
+font-family: $semi;
+					}
 				}
 			}
 			
@@ -802,6 +1096,9 @@ a:hover {
 .section-4 {
 	padding-bottom: 70px;
 	text-align: center;
+	@media #{$bp-blarge} {
+	      padding-bottom: 50px;
+	}
 	hr {
 		width: 85%;
 		display: inline-block;
@@ -817,6 +1114,9 @@ a:hover {
 	.container {
 		background-color: rgba(241, 241, 241,.3);
 		padding: 90px 15px 80px;
+		@media #{$bp-blarge} {
+		      padding: 50px 15px; 
+		}
 	}
 	.col4 {
 		margin-top: 59px;
@@ -836,24 +1136,44 @@ a:hover {
 					width: 64px;
 					height: 64px;
 					background-size: 64px 64px;
+					@media #{$bp-blarge} {
+					      width: 48px;
+					      height: 48px;
+					      background-size: 48px 48px;
+					}
 				}
 				&.icon-1-2 {
 					background: url('../img/icon-1-2.svg') center top no-repeat;
 					width: 63px;
 					height: 62px;
 					background-size: 63px 62px;
+					@media #{$bp-blarge} {
+					      width: 47px;
+					      height: 46px;
+					      background-size: 47px 46px;
+					}
 				}
 				&.icon-1-3 {
 					background: url('../img/icon-1-3.svg') center top no-repeat;
 					width: 70px;
 					height: 60px;
 					background-size: 70px 60px;
+					@media #{$bp-blarge} {
+					      width: 52px;
+					      height: 45px;
+					      background-size: 52px 45px;
+					}
 				}
 				&.icon-1-4 {
 					background: url('../img/icon-1-4.svg') center top no-repeat;
 					width: 65px;
 					height: 65px;
 					background-size: 65px 65px;
+					@media #{$bp-blarge} {
+					      width: 49px;
+					      height: 49px;
+					      background-size: 49px 49px;
+					}
 				}
 			}
 		}
@@ -864,6 +1184,11 @@ a:hover {
 			line-height: 24px;
 			text-transform: uppercase;
 			margin-top: 35px;
+			@media #{$bp-blarge} {
+			      font-size: 16px;
+line-height: 20px;
+margin-top: 15px;
+			}
 		}
 	}
 }

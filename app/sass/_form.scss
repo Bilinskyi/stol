@@ -18,6 +18,11 @@ input:not([type=submit]) {
 	letter-spacing: 1.23px;
 	font-family: $normal;
 	text-transform: uppercase;
+	@media #{$bp-blarge} {
+	      height: 44px;
+	      line-height: 44px;
+	      font-size: 12px;
+	}
 }
 
 [type=submit] {
@@ -39,6 +44,10 @@ input.error {
 	background: rgba(255,255,255, .9);
 	text-align: left;
 	padding: 60px 40px;
+	@media #{$bp-blarge} {
+	      width: 321px;
+	      padding: 50px 30px;
+	}
 	&.center-form {
 		margin-left: auto;
 		margin-right: auto;
@@ -93,6 +102,9 @@ input.error {
 		padding-bottom: 100px;
 		padding-top: 60px;
 		float: right;
+		@media #{$bp-blarge} {
+		      padding-bottom: 70px;
+		}
 	}
 	.form-title {
 		color: #3d3d3d;
@@ -101,14 +113,23 @@ input.error {
 		line-height: 42px;
 		font-family: $f;
 		text-transform: uppercase;
+		@media #{$bp-blarge} {
+		      font-size: 28px;
+letter-spacing: 4.87px;
+line-height: 34px;
+		}
 	}
 	.form-sm {
 		color: #3d3d3d;
 		font-size: 18px;
 		line-height: 22px;
 		font-family: $book;
-
 		margin: 30px 0 35px;
+		@media #{$bp-blarge} {
+		      font-size: 14px;
+line-height: 16px;
+margin: 20px 0;
+		}
 	}
 	.note {
 		color: #3d3d3d;
@@ -116,6 +137,10 @@ input.error {
 		line-height: 18px;
 		font-family: $book;
 		margin-top: 23px;
+		@media #{$bp-blarge} {
+		      font-size: 12px;
+line-height: 14px;
+		}
 	}
 	input {
 		width: 100%;
@@ -129,5 +154,10 @@ input.error {
 		font-family: $normal;
 		color: #4a4a4a;
 		font-size: 16px;
+		@media #{$bp-blarge} {
+		      height: 44px;
+		      font-size: 13px;
+		      margin-bottom: 15px;
+		}
 	}
 }

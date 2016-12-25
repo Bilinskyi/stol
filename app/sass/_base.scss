@@ -3,19 +3,25 @@
 :-moz-placeholder {color: #4a4a4a;font-size: 16px;font-family: $normal;}
 :-ms-input-placeholder {color: #4a4a4a;font-size: 16px;font-family: $normal;}
 
-        
 
- 
+@media #{$bp-blarge} {
+  ::-webkit-input-placeholder {color: #4a4a4a;font-size: 13px;font-family: $normal;}
+  ::-moz-placeholder {color: #4a4a4a;font-size: 13px;font-family: $normal;}
+  :-moz-placeholder {color: #4a4a4a;font-size: 13px;font-family: $normal;}
+  :-ms-input-placeholder {color: #4a4a4a;font-size: 13px;font-family: $normal;}
+}
+
+
 .popup-form ::-webkit-input-placeholder {color: rgba(74,74,74, .3);font-size: 14px;font-family: $normal;}
 .popup-form ::-moz-placeholder {color: rgba(74,74,74, .3);font-size: 14px;font-family: $normal;}
 .popup-form :-moz-placeholder {color: rgba(74,74,74, .3);font-size: 14px;font-family: $normal;}
 .popup-form :-ms-input-placeholder {color: rgba(74,74,74, .3);font-size: 14px;font-family: $normal;}
 
 
- .input-popup::-webkit-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
- .input-popup::-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
- .input-popup:-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
- .input-popup:-ms-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+.input-popup::-webkit-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+.input-popup::-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+.input-popup:-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+.input-popup:-ms-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
 
 
 .section-calc ::-webkit-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
@@ -57,8 +63,7 @@ h1,h2,h3,h4,h5,h6 {
 .wrapper:after {clear: both;}
 .flow-hidden {overflow: hidden}
 body {
-  min-width: 1900px;
-  // max-width: 1920px;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   position: relative; 
