@@ -11,6 +11,9 @@ background: url(../img/phoneanimate.svg) center center no-repeat;
 background-size: 38px 30px;
 transition: all .15s linear;
 
+@media #{$bp-blarge} {
+      margin-top: 40px;
+}
 &:hover {
   
 }

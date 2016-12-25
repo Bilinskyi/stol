@@ -17,9 +17,9 @@ h2 {
 	text-transform: uppercase;
 	text-align: center;
 	@media #{$bp-blarge} {
-	      font-size: 44px;
-letter-spacing: 8.98px;
-line-height: 54px;
+		font-size: 44px;
+		letter-spacing: 8.98px;
+		line-height: 54px;
 	}
 }
 
@@ -30,9 +30,9 @@ h5 {
 	text-align: center;
 	text-transform: uppercase;
 	@media #{$bp-blarge} {
-	      font-size: 18px;
-line-height: 24px;
-letter-spacing: 3.29px;
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 3.29px;
 	}
 }
 
@@ -44,9 +44,9 @@ letter-spacing: 3.29px;
 	text-transform: uppercase;
 	text-align: center;
 	@media #{$bp-blarge} {
-	      font-size: 28px;
-letter-spacing: 3.29px;
-line-height: 34px;
+		font-size: 28px;
+		letter-spacing: 3.29px;
+		line-height: 34px;
 	}
 }
 
@@ -67,7 +67,7 @@ header {
 	padding-bottom: 65px;
 	text-align: left;
 	@media #{$bp-blarge} {
-	      padding-bottom: 55px;
+		padding-bottom: 55px;
 	}
 	.title {
 		letter-spacing: 5.41px;
@@ -110,7 +110,10 @@ header {
 		text-align: center;
 		background-color: rgba(0,0,0, .3);
 		display: inline-block;
-		padding: 2px 0 3px;
+		padding: 6px 0px;
+		@media #{$bp-blarge} {
+		      		padding: 2px 0 3px;
+		}
 		li {
 			display: inline-block;
 			margin: 0 10px;
@@ -224,7 +227,7 @@ header {
 			font-size: 22px;
 			line-height: 21px;
 			@media #{$bp-blarge} {
-			      font-size: 20px;
+				font-size: 20px;
 			}
 		}
 		a.link {
@@ -237,7 +240,7 @@ header {
 			font-family: $semi;
 			text-transform: uppercase;
 			@media #{$bp-blarge} {
-			      font-size: 11px;
+				font-size: 11px;
 			}
 		}
 	}
@@ -245,7 +248,7 @@ header {
 	.main-header {
 		padding-top: 60px;
 		@media #{$bp-blarge} {
-		      padding-top: 38px;
+			padding-top: 38px;
 		}
 		h1 {
 			font-family: $f;
@@ -257,10 +260,10 @@ header {
 			text-transform: uppercase;
 			margin-top: 82px;
 			@media #{$bp-blarge} {
-			      font-size: 59px;
-line-height: 64px;
-letter-spacing: 12.04px;
-margin-top: 65px;
+				font-size: 59px;
+				line-height: 64px;
+				letter-spacing: 12.04px;
+				margin-top: 65px;
 			}
 		}
 		h4 {
@@ -273,9 +276,9 @@ margin-top: 65px;
 			font-family: $f;
 			margin-top: 20px;
 			@media #{$bp-blarge} {
-			      font-size: 28px;
-letter-spacing: 4.46px;
-line-height: 32px;
+				font-size: 28px;
+				letter-spacing: 4.46px;
+				line-height: 32px;
 			}
 		}
 		h6 {
@@ -298,8 +301,8 @@ line-height: 32px;
 	padding-bottom: 110px;
 	padding-top: 80px;
 	@media #{$bp-blarge} {
-	      padding-top: 70px;
-	      padding-bottom: 60px;
+		padding-top: 70px;
+		padding-bottom: 60px;
 	}
 	.button {
 		padding: 0 42px;
@@ -308,16 +311,16 @@ line-height: 32px;
 		position: relative;
 		padding-bottom: 500px;
 		@media #{$bp-blarge} {
-		      padding-bottom: 420px;
+			padding-bottom: 420px;
 		}
 	}
 	.title {
 		text-align: left;
 		letter-spacing: 5.41px;
 		@media #{$bp-blarge} {
-		      font-size: 25px;
-letter-spacing: 3.98px;
-line-height: 30px;
+			font-size: 25px;
+			letter-spacing: 3.98px;
+			line-height: 30px;
 		}
 	}
 	.title-1 {
@@ -325,9 +328,9 @@ line-height: 30px;
 		margin-top: 20px;
 		margin-bottom: 25px;
 		@media #{$bp-blarge} {
-		      font-size: 22px;
-line-height: 34px;
-margin: 15px 0 10px;
+			font-size: 22px;
+			line-height: 34px;
+			margin: 15px 0 10px;
 		}
 	}
 	.p-sec-1 {
@@ -337,8 +340,8 @@ margin: 15px 0 10px;
 		margin-top: 0;
 		line-height: 20px;
 		@media #{$bp-blarge} {
-		      font-size: 14px;
-line-height: 18px;
+			font-size: 14px;
+			line-height: 18px;
 		}
 	}
 	.plus {
@@ -348,9 +351,9 @@ line-height: 18px;
 		background-size: 41px 41px; 
 		position: absolute;
 		@media #{$bp-blarge} {
-		      width: 31px;
-		      height: 31px;
-		      background-size: 31px 31px;
+			width: 31px;
+			height: 31px;
+			background-size: 31px 31px;
 		}
 		&:hover {
 			cursor: pointer;
@@ -373,8 +376,8 @@ line-height: 18px;
 			left: 406px;
 			bottom: 97px;
 			@media #{$bp-blarge} {
-			          left: 310px;
-    bottom: 150px;
+				left: 310px;
+				bottom: 150px;
 			}
 			.bg-1 {
 				left: 96px;
@@ -385,7 +388,7 @@ line-height: 18px;
 					right: 63px;
 					left: auto;
 					@media #{$bp-blarge} {
-					      right: 47px;
+						right: 47px;
 					}
 				}
 			}
@@ -394,14 +397,14 @@ line-height: 18px;
 			left: 880px;
 			bottom: 244px;
 			@media #{$bp-blarge} {
-			          left: 650px;
-    bottom: 259px;
+				left: 650px;
+				bottom: 259px;
 			}
 			.bg-1 {
 				left: -55px !important;
 				width: 184px;
 				@media #{$bp-blarge} {
-				      left: -42px !important;
+					left: -42px !important;
 				}
 				&:before {
 					left: 0;
@@ -411,7 +414,7 @@ line-height: 18px;
 					left: auto;
 					padding-right: 30px;
 					@media #{$bp-blarge} {
-					      right: 47px;
+						right: 47px;
 					}
 				}
 			}
@@ -420,13 +423,13 @@ line-height: 18px;
 			left: 1000px;
 			bottom: 255px;
 			@media #{$bp-blarge} {
-    left: 613px;
-    bottom: 192px;	
-    		}
+				left: 613px;
+				bottom: 192px;	
+			}
 			.bg-1 {
 				left: 96px;
 				@media #{$bp-blarge} {
-				      left: 72px;
+					left: 72px;
 				}
 				&:before {
 					left: 0;
@@ -438,13 +441,13 @@ line-height: 18px;
 					margin-left: 63px;
 					padding-right: 30px;
 					@media #{$bp-blarge} {
-					      margin-left: 47px;
+						margin-left: 47px;
 					}
 					&.top-r {
 						&:before {
 							left: -63px;
 							@media #{$bp-blarge} {
-							      left: -46px;
+								left: -46px;
 							}
 						}
 					}
@@ -454,14 +457,14 @@ line-height: 18px;
 		&.pos-5 {
 			left: 1140px;
 			bottom: 122px;
-@media #{$bp-blarge} {
-          left: 613px;
-    bottom: 88px;
-}
+			@media #{$bp-blarge} {
+				left: 613px;
+				bottom: 88px;
+			}
 			.bg-1 {
 				left: 96px;
 				@media #{$bp-blarge} {
-				      left: 72px;
+					left: 72px;
 				}
 				&:before {
 					left: 0;
@@ -473,13 +476,13 @@ line-height: 18px;
 					margin-left: 63px;
 					padding-right: 30px;
 					@media #{$bp-blarge} {
-					      margin-left: 47px;
+						margin-left: 47px;
 					}
 					&.top-r {
 						&:before {
 							left: -63px;
 							@media #{$bp-blarge} {
-							      left: -46px;
+								left: -46px;
 							}
 						}
 					}
@@ -490,8 +493,8 @@ line-height: 18px;
 			left: 1350px;
 			bottom: 160px;
 			@media #{$bp-blarge} {
-			          left: 981px;
-    bottom: 120px;
+				left: 981px;
+				bottom: 120px;
 			}
 			.bg-1 {
 				bottom: auto;
@@ -500,15 +503,15 @@ line-height: 18px;
 				left: 96px;
 				width: 184px;
 				@media #{$bp-blarge} {
-				          margin-top: 42px;
-				          left: 75px;
+					margin-top: 42px;
+					left: 75px;
 				}
 				&:before {
 					left: -63px;
 					bottom: 100% !important;
 					top: auto !important;
 					@media #{$bp-blarge} {
-					      left: -47px;
+						left: -47px;
 					}
 				}
 			}
@@ -516,15 +519,15 @@ line-height: 18px;
 		&.pos-7 {
 			left: 1190px;
 			bottom: 536px;
-		@media #{$bp-blarge} {
-		      left: 943px;
-    bottom: 488px;
-		}
+			@media #{$bp-blarge} {
+				left: 943px;
+				bottom: 488px;
+			}
 			.bg-1 {
 				left: -55px !important;
 				width: 184px;
 				@media #{$bp-blarge} {
-				      left: -42px !important;
+					left: -42px !important;
 				}
 				&:before {
 					left: 0;
@@ -534,7 +537,7 @@ line-height: 18px;
 					left: auto;
 					padding-right: 30px;
 					@media #{$bp-blarge} {
-					      right: 46px;
+						right: 46px;
 					}
 				}
 			}
@@ -560,11 +563,11 @@ line-height: 18px;
 				bottom: 100%;
 				left: 63px;
 				@media #{$bp-blarge} {
-				      font-size: 12px;
-line-height: 14px;
-padding: 15px 20px;
-left: 47px;
-margin-bottom: 49px;
+					font-size: 12px;
+					line-height: 14px;
+					padding: 15px 20px;
+					left: 47px;
+					margin-bottom: 49px;
 				}
 				i {
 					display: inline-block;
@@ -590,8 +593,8 @@ margin-bottom: 49px;
 					position: relative;
 					margin: 5px 0;
 					@media #{$bp-blarge} {
-					      font-size: 12px;
-line-height: 14px;
+						font-size: 12px;
+						line-height: 14px;
 					}
 					&:before {
 						content: '';
@@ -616,9 +619,9 @@ line-height: 14px;
 						top: 100%;
 						left: 100%;
 						@media #{$bp-blarge} {
-						      width: 46px;
-						      height: 48px;
-						      background-size: 46px 48px;
+							width: 46px;
+							height: 48px;
+							background-size: 46px 48px;
 						}
 					}
 				}
@@ -634,9 +637,9 @@ line-height: 14px;
 						top: 100%;
 						right: 100%;
 						@media #{$bp-blarge} {
-						      width: 46px;
-						      height: 48px;
-						      background-size: 46px 48px;
+							width: 46px;
+							height: 48px;
+							background-size: 46px 48px;
 						}
 					}
 				}
@@ -656,13 +659,13 @@ line-height: 14px;
 				bottom: 100%;
 				margin-bottom: 55px;
 				@media #{$bp-blarge} {
-				      font-size: 10px;
-line-height: 14px;
-letter-spacing: 0.88px;
-padding-left: 5px;
-padding-right: 5px;
-width: 225px;
-margin-bottom: 41px;
+					font-size: 10px;
+					line-height: 14px;
+					letter-spacing: 0.88px;
+					padding-left: 5px;
+					padding-right: 5px;
+					width: 225px;
+					margin-bottom: 41px;
 				}
 				&.top-l {
 					&:before {
@@ -674,11 +677,11 @@ margin-bottom: 41px;
 						background-size: 63px 65px;
 						top: 100%;
 						right: -63px;
-							@media #{$bp-blarge} {
-						      width: 46px;
-						      height: 48px;
-						      background-size: 46px 48px;
-						      right: -46px;
+						@media #{$bp-blarge} {
+							width: 46px;
+							height: 48px;
+							background-size: 46px 48px;
+							right: -46px;
 						}
 					}
 				}
@@ -692,11 +695,11 @@ margin-bottom: 41px;
 						background-size: 63px 65px;
 						top: 100%;
 						left: -63px;
-							@media #{$bp-blarge} {
-						      width: 46px;
-						      height: 48px;
-						      left: -45px;
-						      background-size: 46px 48px;
+						@media #{$bp-blarge} {
+							width: 46px;
+							height: 48px;
+							left: -45px;
+							background-size: 46px 48px;
 						}
 					}
 				}
@@ -781,8 +784,8 @@ margin-bottom: 41px;
 		padding-top: 105px;
 		padding-bottom: 40px;
 		@media #{$bp-blarge} {
-		      padding-top: 70px;
-		      padding-bottom: 15px;
+			padding-top: 70px;
+			padding-bottom: 15px;
 		}
 		.title {
 			color: rgba(255, 210, 151,.6);
@@ -805,7 +808,7 @@ margin-bottom: 41px;
 				margin-right: auto;
 				height: auto;
 				@media #{$bp-blarge} {
-				      max-width: 520px;
+					max-width: 520px;
 				}
 			}
 		}
@@ -838,9 +841,9 @@ margin-bottom: 41px;
 				position: relative;
 
 				@media #{$bp-blarge} {
-				      font-size: 11px;
-letter-spacing: 0.96px;
-margin-bottom: 70px;
+					font-size: 11px;
+					letter-spacing: 0.96px;
+					margin-bottom: 70px;
 				}
 				&.active {
 					color: rgb(204, 166, 84);
@@ -865,7 +868,7 @@ margin-bottom: 70px;
 		padding: 23px 0 20px;
 		background: #131313;
 		@media #{$bp-blarge} {
-		      padding: 11px 0;
+			padding: 11px 0;
 		}
 		.flex-wrapp {
 			display: flex;
@@ -891,8 +894,8 @@ margin-bottom: 70px;
 	text-transform: uppercase;
 	letter-spacing: 8px;
 	@media #{$bp-blarge} {
-	      font-size: 42px;
-line-height: 60px;
+		font-size: 42px;
+		line-height: 60px;
 	}
 }
 .text-sm {
@@ -903,9 +906,9 @@ line-height: 60px;
 	text-transform: uppercase;
 	text-align: center;
 	@media #{$bp-blarge} {
-	      font-size: 12px;
-letter-spacing: 3.03px;
-line-height: 24px;
+		font-size: 12px;
+		letter-spacing: 3.03px;
+		line-height: 24px;
 	}
 }
 
@@ -916,13 +919,13 @@ line-height: 24px;
 .section-3 {
 	padding: 130px 0 110px;
 	@media #{$bp-blarge} {
-	      padding: 100px 0 80px;
+		padding: 100px 0 80px;
 	}
 	.button {
 		padding: 0 42px;
 		margin-top: 40px;
 		@media #{$bp-blarge} {
-		      margin-top: 30px;
+			margin-top: 30px;
 		}
 	}
 	.line-bottom {
@@ -937,9 +940,9 @@ line-height: 24px;
 		margin-top: 40px;
 		margin-bottom: 30px;
 		@media #{$bp-blarge} {
-		      font-size: 11px;
-font-weight: 400;
-margin: 30px 0 20px;
+			font-size: 11px;
+			font-weight: 400;
+			margin: 30px 0 20px;
 		}
 		&:hover {
 			cursor: pointer;
@@ -957,10 +960,10 @@ margin: 30px 0 20px;
 			text-transform: uppercase;
 			margin-top: 15px;
 			@media #{$bp-blarge} {
-			      font-size: 14px;
-letter-spacing: 3.53px;
-line-height: 24px;
-margin-top: 8px;
+				font-size: 14px;
+				letter-spacing: 3.53px;
+				line-height: 24px;
+				margin-top: 8px;
 			}
 			&+i {
 				color: rgb(106, 106, 106);
@@ -971,9 +974,9 @@ margin-top: 8px;
 				margin-top: 42px;
 				display: block;
 				@media #{$bp-blarge} {
-				      font-size: 16px;
-line-height: 22px;
-margin-top: 20px;
+					font-size: 16px;
+					line-height: 22px;
+					margin-top: 20px;
 				}
 			}
 		}
@@ -983,7 +986,7 @@ margin-top: 20px;
 		margin-top: 90px;
 		border-collapse: collapse;
 		@media #{$bp-blarge} {
-		      margin-top: 60px;
+			margin-top: 60px;
 		}
 		&.t1 {
 			tr:first-child {
@@ -995,17 +998,17 @@ margin-top: 20px;
 					padding: 34px 20px 20px;
 					border-right: 0px;
 					@media #{$bp-blarge} {
-					      font-size: 14px;
-					      padding: 15px;
-letter-spacing: 1px;
-line-height: 17px;
+						font-size: 14px;
+						padding: 15px;
+						letter-spacing: 1px;
+						line-height: 17px;
 					}
 					img {
 						margin-right: 45px;
 						@media #{$bp-blarge} {
-						      margin-right: 30px;
-						      width: 68px;
-						      height: auto;
+							margin-right: 30px;
+							width: 68px;
+							height: auto;
 						}
 					}
 					&:first-child {
@@ -1044,9 +1047,9 @@ line-height: 17px;
 				width: (100%-23.3%)/3;
 				vertical-align: middle;
 				@media #{$bp-blarge} {
-				      font-size: 14px;
-				          padding: 10px 20px 11px;
-letter-spacing: 1px;
+					font-size: 14px;
+					padding: 10px 20px 11px;
+					letter-spacing: 1px;
 				}
 				&:first-child {
 					width: 23.3%;
@@ -1054,9 +1057,9 @@ letter-spacing: 1px;
 					font-size: 13px;
 					letter-spacing: 0.8px;
 					@media #{$bp-blarge} {
-					      font-size: 12px;
-letter-spacing: 0.6px;
-font-family: $semi;
+						font-size: 12px;
+						letter-spacing: 0.6px;
+						font-family: $semi;
 					}
 				}
 			}
@@ -1097,7 +1100,7 @@ a:hover {
 	padding-bottom: 70px;
 	text-align: center;
 	@media #{$bp-blarge} {
-	      padding-bottom: 50px;
+		padding-bottom: 50px;
 	}
 	hr {
 		width: 85%;
@@ -1115,7 +1118,7 @@ a:hover {
 		background-color: rgba(241, 241, 241,.3);
 		padding: 90px 15px 80px;
 		@media #{$bp-blarge} {
-		      padding: 50px 15px; 
+			padding: 50px 15px; 
 		}
 	}
 	.col4 {
@@ -1137,9 +1140,9 @@ a:hover {
 					height: 64px;
 					background-size: 64px 64px;
 					@media #{$bp-blarge} {
-					      width: 48px;
-					      height: 48px;
-					      background-size: 48px 48px;
+						width: 48px;
+						height: 48px;
+						background-size: 48px 48px;
 					}
 				}
 				&.icon-1-2 {
@@ -1148,9 +1151,9 @@ a:hover {
 					height: 62px;
 					background-size: 63px 62px;
 					@media #{$bp-blarge} {
-					      width: 47px;
-					      height: 46px;
-					      background-size: 47px 46px;
+						width: 47px;
+						height: 46px;
+						background-size: 47px 46px;
 					}
 				}
 				&.icon-1-3 {
@@ -1159,9 +1162,9 @@ a:hover {
 					height: 60px;
 					background-size: 70px 60px;
 					@media #{$bp-blarge} {
-					      width: 52px;
-					      height: 45px;
-					      background-size: 52px 45px;
+						width: 52px;
+						height: 45px;
+						background-size: 52px 45px;
 					}
 				}
 				&.icon-1-4 {
@@ -1170,9 +1173,9 @@ a:hover {
 					height: 65px;
 					background-size: 65px 65px;
 					@media #{$bp-blarge} {
-					      width: 49px;
-					      height: 49px;
-					      background-size: 49px 49px;
+						width: 49px;
+						height: 49px;
+						background-size: 49px 49px;
 					}
 				}
 			}
@@ -1185,9 +1188,9 @@ a:hover {
 			text-transform: uppercase;
 			margin-top: 35px;
 			@media #{$bp-blarge} {
-			      font-size: 16px;
-line-height: 20px;
-margin-top: 15px;
+				font-size: 16px;
+				line-height: 20px;
+				margin-top: 15px;
 			}
 		}
 	}
@@ -1201,11 +1204,22 @@ margin-top: 15px;
 	background: url('../img/bg-2.jpg') center top no-repeat;
 	background-size: cover;
 	padding: 110px 0 129px;
+	@media #{$bp-blarge} {
+		padding: 80px 0 95px;
+	}
+	.wr-mh-1 {
+		@media #{$bp-blarge} {
+			margin: 0 -33px;
+		}
+	}
 	.form-all {
 		width: 100%;
 		padding: 0px 25px;
 		form {
 			margin-top: 29px;
+		}
+		@media #{$bp-blarge} {
+			padding: 0 10px;
 		}
 	}
 	.head {
@@ -1217,11 +1231,19 @@ margin-top: 15px;
 		text-align: center;
 		padding-bottom: 10px;
 		border-bottom: 1px solid rgba(209, 179, 140, .1);
+		@media #{$bp-blarge} {
+			font-size: 32px;
+			letter-spacing: 5.57px;
+			line-height: 38px;
+		}
 	}
 	.prise-bg-1 {
 		background-color: rgb(34, 34, 34);
 		padding-top: 55px;
 		padding-bottom: 55px;
+		@media #{$bp-blarge} {
+			padding-bottom: 43px;
+		}
 		.prise-1 {
 			display: block;
 			margin-left: auto;
@@ -1229,12 +1251,18 @@ margin-top: 15px;
 			margin-top: 90px;
 			max-width: 100%;
 			height: auto;
+			@media #{$bp-blarge} {
+				max-width: 217px;
+			}
 		}
 	}
 	.prise-bg-2 {
 		background-color: white;
 		padding-top: 45px;
 		padding-bottom: 20px;
+		@media #{$bp-blarge} {
+			padding-top: 33px;
+		}
 	}
 }
 
@@ -1248,11 +1276,17 @@ margin-top: 15px;
 .section-6 {
 	background-color: rgb(29, 29, 29);
 	padding: 90px 0;
+	@media #{$bp-blarge} {
+		padding: 50px 0 70px;
+	}
 	h2 {
 		color: rgb(157, 157, 157);
 	}
 	h5 {
 		margin-top: 15px;
+		@media #{$bp-blarge} {
+			margin-top: 10px;
+		}
 	}
 	em {
 		font-style: normal;
@@ -1263,9 +1297,15 @@ margin-top: 15px;
 		display: block;
 		margin-top: 35px;
 		text-align: center;
+		@media #{$bp-blarge} {
+			margin-top: 20px;
+		}
 	}
 	.slider-1 {
 		margin-top: 120px;
+		@media #{$bp-blarge} {
+			margin-top: 75px;
+		}
 		.left-block {
 			width: 26%;
 			background-color: #fff;
@@ -1283,6 +1323,11 @@ margin-top: 15px;
 					height: 66.66%;
 					.item-box {
 						background-color: #fff;
+						padding-top: 30px;
+						.left-block-head {
+							top: 0;
+							transform: none;
+						}
 					}
 					.left-block-head {
 						color: rgb(209, 179, 140);
@@ -1297,11 +1342,15 @@ margin-top: 15px;
 			}
 			.item-box {
 				background-color: rgb(248, 248, 248);
-				padding-top: 50px;
 				padding-left: 55px;
 				padding-right: 45px;
 				margin-bottom: 2px;
 				height: 100%;
+				position: relative;
+				@media #{$bp-blarge} {
+					padding-left: 40px;
+					padding-right: 40px;
+				}
 				&:last-child {
 					margin-bottom: 0;
 				}
@@ -1313,11 +1362,19 @@ margin-top: 15px;
 				color: rgb(61, 61, 61);
 				position: relative;
 				text-transform: uppercase;
+
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				@media #{$bp-blarge} {
+					font-size: 20px;
+					line-height: 24px;
+				}
 				&:after {
 					content: '';
 					display: block;
 					position: absolute;
-					right: 0;
+					right: -2px;
 					top: 2px;
 					transform: rotate(0deg);
 					background: url('../img/arrow-down.svg') center top no-repeat;
@@ -1335,6 +1392,10 @@ margin-top: 15px;
 				margin: 0;
 				display: none;
 				margin-top: 15px;
+				@media #{$bp-blarge} {
+					font-size: 15px;
+					line-height: 19px;
+				}
 			}
 		}
 		.right-block {
@@ -1398,6 +1459,9 @@ margin-top: 15px;
 	&.pages-1 {
 		position: absolute;
 		left: 45px;
+		@media #{$bp-blarge} {
+		      left: 30px;
+		}
 	}
 	em {
 		font-style: normal;
@@ -1411,9 +1475,16 @@ margin-top: 15px;
 .section-7 {
 	background-color: rgb(36, 36, 36);
 	padding: 85px 0 65px;
+	@media #{$bp-blarge} {
+		padding-top: 60px; 
+		padding-bottom: 50px;
+	}
 	.container {
 		padding-bottom: 100px;
 		position: relative;
+		@media #{$bp-blarge} {
+			padding-bottom: 80px;
+		}
 		&:after{
 			content: '';
 			display: block;
@@ -1429,41 +1500,71 @@ margin-top: 15px;
 	}
 	h5 {
 		margin-top: 20px;
+		@media #{$bp-blarge} {
+			margin-top: 15px;
+		}
 	}
 	.slider-2 {
 		background-color: #fff;
 		padding: 50px 35px 50px 15px;
 		position: relative;
 		margin-top: 70px;
+		@media #{$bp-blarge} {
+			padding-top: 45px;
+			padding-bottom: 45px;
+			padding-right: 25px;
+		}
 		.slider-2-left-side {
 			float: left;
 			clear: left;
 			width: 43%;
 			padding-left: 115px;
 			padding-right: 65px;
+			@media #{$bp-blarge} {
+				padding-left: 60px;
+				width: 42%;
+				padding-right: 50px;
+			}
 			hr {
 				height: 1px;
 				background: rgba(163, 163, 163,.11);
 				margin: 20px 0 25px;
+				@media #{$bp-blarge} {
+					margin: 10px 0 15px;
+				}
 			}
 			.text-md {
 				color: rgb(85, 85, 85);
 				font-size: 18px;
 				line-height: 22px;
 				font-family: $book;
+				@media #{$bp-blarge} {
+					font-size: 15px;
+					line-height: 18px;
+				}
 			}
 			.header {
 				color: rgb(85, 85, 85);
 				font-size: 20px;
 				line-height: 24px;
 				font-family: $book;
+				@media #{$bp-blarge} {
+					font-size: 15px;
+					line-height: 20px;
+				}
 			}
 			.dsc {
 				color: rgb(209, 179, 140);
 				font-size: 14px;
 				text-transform: uppercase;
+				@media #{$bp-blarge} {
+					font-size: 13px;
+				}
 				&+.text-md {
 					margin-top: 20px;
+					@media #{$bp-blarge} {
+						margin-top: 10px;
+					}
 				}
 			}
 			p.italic {
@@ -1472,18 +1573,33 @@ margin-top: 15px;
 				line-height: 22px;
 				font-family: $bi;
 				margin: 10px 0 0 0;
+				@media #{$bp-blarge} {
+					font-size: 14px;
+					line-height: 16px;
+				}
 			}
 			.button {
 				padding: 0 20px;
+				@media #{$bp-blarge} {
+				      line-height: 40px;
+				      height: 40px;
+				}
 			}
 			.price {
 				font-family: $semi;
 				color: rgb(106, 106, 106);
 				font-size: 24px;
 				margin-top: 12px;
+				@media #{$bp-blarge} {
+					font-size: 22px;
+					margin-top: 5px;
+				}
 			}
 			.price-button {
 				margin-top: 50px;
+				@media #{$bp-blarge} {
+					margin-top: 20px;
+				}
 			}
 		}
 		.slider-2-right-side {
@@ -1491,6 +1607,9 @@ margin-top: 15px;
 			margin-right: 5%;
 			float: right;
 			position: relative;
+			@media #{$bp-blarge} {
+			      width: 53%;
+			}
 			.bx-pager.bx-default-pager {
 				bottom: 25px;
 			}
@@ -1560,6 +1679,10 @@ margin-top: 15px;
 			right: 0;
 			top: 50%;
 			transform: translateY(-50%);
+			@media #{$bp-blarge} {
+				top: (470-118px)/2;
+				transform: none;
+			}
 			a {
 				display: block;
 				margin: 12px 0;
@@ -1569,12 +1692,23 @@ margin-top: 15px;
 				height: 41px;
 				border: 3px solid #d1d1d1;	
 				border-radius: 50%;
+				@media #{$bp-blarge} {
+				      width: 31px;
+				      height: 31px;
+				}
 			}
 		}
 
 	}
 
-
+.bx-wrapper .bx-controls-direction a i {
+	font-size: 11px;
+}
+.bx-wrapper .bx-controls-direction a i:before {
+					@media #{$bp-blarge} {
+					      line-height: 27px !important;
+					}
+				}
 
 
 }
@@ -1660,6 +1794,9 @@ margin-top: 15px;
 	}
 	.p-img {
 		padding: 58px 0;
+		@media #{$bp-blarge} {
+		      padding: 44px 0;
+		}
 	}
 	.item-slide {
 		width: 490px;
@@ -1669,6 +1806,12 @@ margin-top: 15px;
 		padding: 45px 50px 10px;
 		text-align: left;
 		position: relative;
+		@media #{$bp-blarge} {
+			width: 367px;
+			height: 600px;
+		      padding-left: 35px;
+		      padding-right: 35px;
+		}
 		&.right-s {
 			float: right;
 		}
@@ -1682,6 +1825,12 @@ margin-top: 15px;
 			line-height: 45px;
 			text-align: left;
 			margin-top: 20px;
+			@media #{$bp-blarge} {
+			      font-size: 26px;
+letter-spacing: 4.52px;
+line-height: 30px;
+margin-top: 10px;
+			}
 		}
 		.slide-descr {
 			color: rgb(82, 82, 82);
@@ -1690,11 +1839,19 @@ margin-top: 15px;
 			line-height: 22px;
 			text-transform: uppercase;
 			margin-top: 10px;
+			@media #{$bp-blarge} {
+			      font-size: 14px;
+letter-spacing: 2.56px;
+line-height: 18px;
+			}
 		}
 		hr {
 			margin: 20px 0 25px;
 			height: 1px;
 			background-color: rgba(209, 179, 140, .2);
+			@media #{$bp-blarge} {
+			      margin: 10px 0 15px;
+			}
 		}
 		.title-2 {
 			color: rgb(209, 179, 140);
@@ -1703,12 +1860,21 @@ margin-top: 15px;
 			line-height: 33px;
 			font-family: $f;
 			text-transform: uppercase;
+			@media #{$bp-blarge} {
+			      font-size: 24px;
+letter-spacing: 3.52px;
+line-height: 30px;
+			}
 		}
 		p {
 			color: rgb(61, 61, 61);
 			font-size: 18px;
 			line-height: 21px;
 			font-family: $book;
+			@media #{$bp-blarge} {
+			      font-size: 14px;
+			      line-height: 16px;
+			}
 		}
 		.custom-wrapp {
 			position: absolute;
@@ -1724,6 +1890,11 @@ margin-top: 15px;
 				text-decoration: none;
 				text-align: center;
 				margin: 0 8px;
+				@media #{$bp-blarge} {
+				      width: 24px;
+				      height: 24px;
+				      margin: 0 5px;
+				}
 				&:hover {
 					background-color: rgb(209, 180, 141);
 					i {
@@ -1735,6 +1906,12 @@ margin-top: 15px;
 					line-height: 30px;
 					font-size: 11px;
 					color: rgb(209, 179, 140);
+					@media #{$bp-blarge} {
+					      font-size: 10px;
+					}
+					@media #{$bp-blarge} {
+					      line-height: 21px;
+					}
 				}
 			}
 		}
@@ -1781,6 +1958,9 @@ margin-top: 15px;
 
 .section-calc {
 	padding: 120px 0 95px;
+	@media #{$bp-blarge} {
+	      padding: 90px 0 70px;
+	}
 	.wrapp-inline {
 		input {
 			width: 55px;
@@ -1807,12 +1987,21 @@ margin-top: 15px;
 		border: none;
 		background: rgba(209,179,140,.3);
 		margin: 100px auto 0;
+		@media #{$bp-blarge} {
+		      margin: 75px auto 0;
+		}
 	}
 	h5 {
 		margin-top: 20px;
+		@media #{$bp-blarge} {
+		      margin-top: 15px;
+		}
 	}
 	.step-btn {
 		margin-top: 79px;
+		@media #{$bp-blarge} {
+		      margin-top: 69px;
+		}
 	}
 	input.input-popup {
 		background-color: #fff;
@@ -1840,6 +2029,9 @@ margin-top: 15px;
 		border-bottom: 1px solid rgba(209, 179, 140,.3);
 		position: relative;
 		margin: 125px auto 20px;
+		@media #{$bp-blarge} {
+		      margin: 70px auto 15px;
+		}
 		div {
 			position: absolute;
 			left: 0;
@@ -1860,7 +2052,7 @@ margin-top: 15px;
 	.main-choose {
 		text-align: center;
 		padding-top: 100px;
-		padding-bottom: 90px;
+	
 		h3 {
 			margin-top: 35px;
 			margin-bottom: 0;
@@ -2249,6 +2441,7 @@ margin-top: 15px;
 			position: absolute;
 			top: 0;
 			top: 90px;
+
 		}
 		li {
 			text-align: center;
@@ -2377,6 +2570,7 @@ margin-top: 15px;
 		}
 		div.bx-controls-direction a {
 			top: 162/2 - (20px);
+
 		}
 		li {
 			position: relative;
@@ -3106,6 +3300,7 @@ margin-top: 15px;
 			height: 41px;
 			border: 3px solid #d1d1d1;	
 			border-radius: 50%;
+
 		}
 	}
 	.wrapp-color {
@@ -3174,6 +3369,9 @@ margin-top: 15px;
 .section-photos {
 	padding: 170px 0;
 	background-color: rgb(29, 29, 29);
+	@media #{$bp-blarge} {
+	      padding: 130px 0;
+	}
 	.left-text {
 		padding-top: 95px;
 		width: 40%;
@@ -3181,11 +3379,20 @@ margin-top: 15px;
 		h2 {
 			text-align: left;
 			line-height: 59px;
+			@media #{$bp-blarge} {
+			      font-size: 44px;
+letter-spacing: 8.98px;
+line-height: 50px;
+			}
 		}
 		h5 {
 			text-align: left;
 			margin-top: 15px;
 			line-height: 34px;
+			@media #{$bp-blarge} {
+letter-spacing: 4.53px;
+line-height: 25px;
+			}
 		}
 	}
 	.wrapp-photos {
@@ -3193,6 +3400,9 @@ margin-top: 15px;
 		float: right;
 		border: 1px solid rgb(209, 179, 140);
 		padding: 30px;
+		@media #{$bp-blarge} {
+		      padding: 18px 24px;
+		}
 		.photo-item {
 			padding: 3px;
 			&.w-25 {
@@ -3214,6 +3424,8 @@ margin-top: 15px;
 					margin-left: auto;
 					margin-right: auto;
 					display: block;
+					      max-width: 95%;
+					      height: auto;
 				}
 			}
 		}
@@ -3232,6 +3444,9 @@ margin-top: 15px;
 	padding: 90px 0 110px;
 	background: url('../img/call-bg.jpg') center top no-repeat;
 	background-size: cover;
+	@media #{$bp-blarge} {
+	      padding: 70px 0 85px;
+	}
 	.call-box {
 		width: 535px;
 		background-color: white;
@@ -3239,9 +3454,17 @@ margin-top: 15px;
 		margin-right: auto;
 		padding: 75px 10px 80px;
 		text-align: center;
+		@media #{$bp-blarge} {
+		      padding: 60px 10px;
+		      width: 401px;
+		}
 		a.button {
 			padding: 0 60px;
 			margin-top: 130px;
+			@media #{$bp-blarge} {
+			      padding: 0 32px;
+			      margin-top: 60px;
+			}
 		}
 		.call-box-title {
 			color: rgb(61, 61, 61);
@@ -3250,6 +3473,11 @@ margin-top: 15px;
 			line-height: 46px;
 			font-family: $f;
 			text-transform: uppercase;
+			@media #{$bp-blarge} {
+			      font-size: 28px;
+letter-spacing: 4.87px;
+line-height: 34px;
+			}
 		}
 		.call-title-sm {
 			color: rgb(209, 179, 140);
@@ -3258,16 +3486,30 @@ margin-top: 15px;
 			line-height: 22px;
 			margin-top: 25px;
 			text-transform: uppercase;
+			@media #{$bp-blarge} {
+			      font-size: 15px;
+letter-spacing: 2.89px;
+line-height: 20px;
+margin-top: 17px;
+			}
 		}
 	}
 }
 
 
 
+.last-mh {
+	@media #{$bp-blarge} {
+	      margin: 0 -33px !important;
+	}
+}
 
 .section-map {
 	padding: 80px 0;
 	background-color: rgb(29, 29, 29);
+	@media #{$bp-blarge} {
+	      padding: 60px 0;
+	}
 	.map-height > div {
 		position: relative;
 	}
@@ -3281,6 +3523,9 @@ margin-top: 15px;
 	.padding-map {
 		padding: 90px 50px;
 		background-color: #fff;
+		@media #{$bp-blarge} {
+		      padding: 75px 40px 65px;
+		}
 	}
 	.map-title {
 		color: rgb(209, 179, 140);
@@ -3288,12 +3533,21 @@ margin-top: 15px;
 		letter-spacing: 0.89px;
 		line-height: 30px;
 		text-transform: uppercase;
+		@media #{$bp-blarge} {
+		      font-size: 18px;
+letter-spacing: 0.67px;
+line-height: 22px;
+		}
 	}
 	p {
 		color: rgb(55, 55, 55);
 		font-size: 18px;
 		line-height: 21px;
 		font-family: $book;
+		@media #{$bp-blarge} {
+		      font-size: 14px;
+line-height: 16px;
+		}
 	}
 	ul {
 		li {
@@ -3303,6 +3557,10 @@ margin-top: 15px;
 			font-size: 18px;
 			line-height: 21px;
 			font-family: $book;
+			@media #{$bp-blarge} {
+			      font-size: 14px;
+line-height: 16px;
+			}
 		}
 	}
 }
@@ -3320,6 +3578,10 @@ margin-top: 15px;
 		position: relative;
 		padding-top: 39px;
 		padding-bottom: 39px;
+		@media #{$bp-blarge} {
+		      padding-top: 30px;
+		      padding-bottom: 30px;
+		}
 		.title-l {
 			color: rgb(209, 179, 140);
 			font-size: 36px;
@@ -3329,6 +3591,12 @@ margin-top: 15px;
 			text-align: center;
 			margin-top: 80px;
 			text-transform: uppercase;
+			@media #{$bp-blarge} {
+			      font-size: 28px;
+letter-spacing: 4.87px;
+line-height: 36px;
+margin-top: 40px;
+			}
 		}
 		.title-l-sm {
 			color: rgb(157, 157, 157);
@@ -3337,6 +3605,11 @@ margin-top: 15px;
 			font-family: $book;
 			text-align: center;
 			margin-top: 50px;
+			@media #{$bp-blarge} {
+			      margin-top: 15px;
+			      font-size: 16px;
+line-height: 20px;
+			}
 		}
 		.css-table {
 			display: table;
@@ -3355,6 +3628,11 @@ margin-top: 15px;
 					display: block;
 					text-align: center;
 					position: relative;
+					@media #{$bp-blarge} {
+					      width: 136px;
+					      height: 131px;
+					      background-size: 136px 131px;
+					}
 					span {
 						display: block;
 						text-align: center;
@@ -3383,9 +3661,15 @@ margin-top: 15px;
 		}
 		&:before {
 			top: 39px;
+			@media #{$bp-blarge} {
+			      top: 30px;
+			}
 		}
 		&:after {
 			bottom: 39px;
+			@media #{$bp-blarge} {
+			      bottom: 30px;
+			}
 		}
 	}
 	.last-bg-white {
@@ -3393,6 +3677,9 @@ margin-top: 15px;
 		.form-all {
 			padding: 90px 25px 120px;
 			width: 100%;
+			@media #{$bp-blarge} {
+			      padding: 65px 15px 75px;
+			}
 		}
 		input:first-child {
 			margin-bottom: 10px;
@@ -3409,6 +3696,17 @@ margin-top: 15px;
 
 footer {
 	padding: 35px 0 25px;
+	@media #{$bp-blarge} {
+	      padding: 30px 0 20px;
+	}
+	.logo-foot {
+		@media #{$bp-blarge} {
+		      img {
+		      	width: 142px;
+		      	height: 35px;
+		      }
+		}
+	}
 	.contact-footer {
 		padding-top: 10px;
 		float: right;
@@ -3418,6 +3716,10 @@ footer {
 			font-size: 22px;
 			line-height: 21px;
 			font-family: $book;
+			@media #{$bp-blarge} {
+			      font-size: 20px;
+line-height: 21px;
+			}
 		}
 		.link-footer-call	{
 			display: inline-block;
@@ -3427,12 +3729,19 @@ footer {
 			text-decoration: underline;
 			text-transform: uppercase;
 			color: rgb(209, 179, 140);
+			@media #{$bp-blarge} {
+			      font-size: 11px;
+letter-spacing: 0.96px;
+			}
 		}
 		.dev {
 			color: rgb(61, 61, 61);
 			font-size: 12px;
 			line-height: 14px;
 			margin-top: 30px;
+			@media #{$bp-blarge} {
+			      margin-top: 20px;
+			}
 		}
 	}
 	.copy {
@@ -3463,6 +3772,9 @@ footer {
 			font-family: $book;
 			&.logo-xs {
 				margin-left: 30px;
+				@media #{$bp-blarge} {
+				      margin-left: 10px;
+				}
 			}
 		}
 	}
