@@ -23,6 +23,11 @@ input:not([type=submit]) {
 	      line-height: 44px;
 	      font-size: 12px;
 	}
+	@media #{$bp-large} {
+	      height: 35px;
+	      line-height: 35px;
+	      font-size: 10px;
+	}
 }
 
 [type=submit] {
@@ -47,6 +52,10 @@ input.error {
 	@media #{$bp-blarge} {
 	      width: 321px;
 	      padding: 50px 30px;
+	}
+	@media #{$bp-large} {
+	      padding: 45px 22px;
+	      width: 280px;
 	}
 	&.center-form {
 		margin-left: auto;
@@ -105,6 +114,10 @@ input.error {
 		@media #{$bp-blarge} {
 		      padding-bottom: 70px;
 		}
+		@media #{$bp-large} {
+			padding-bottom: 50px;
+			padding-top: 45px;
+		}
 	}
 	.form-title {
 		color: #3d3d3d;
@@ -118,6 +131,11 @@ input.error {
 letter-spacing: 4.87px;
 line-height: 34px;
 		}
+		@media #{$bp-large} {
+		      font-size: 22px;
+letter-spacing: 3.83px;
+line-height: 24px;
+		}
 	}
 	.form-sm {
 		color: #3d3d3d;
@@ -130,6 +148,11 @@ line-height: 34px;
 line-height: 16px;
 margin: 20px 0;
 		}
+		@media #{$bp-large} {
+		      font-size: 11px;
+line-height: 14px;
+margin: 13px 0;
+		}
 	}
 	.note {
 		color: #3d3d3d;
@@ -140,6 +163,9 @@ margin: 20px 0;
 		@media #{$bp-blarge} {
 		      font-size: 12px;
 line-height: 14px;
+		}
+		@media #{$bp-large} {
+		      font-size: 11px;
 		}
 	}
 	input {
@@ -158,6 +184,12 @@ line-height: 14px;
 		      height: 44px;
 		      font-size: 13px;
 		      margin-bottom: 15px;
+		}
+		@media #{$bp-large} {
+		      height: 35px;
+		      margin-bottom: 13px;
+		      padding-left: 20px;
+		      font-size: 12px;
 		}
 	}
 }
