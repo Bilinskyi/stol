@@ -528,6 +528,9 @@ line-height: 10px;
 			height: 31px;
 			background-size: 31px 31px;
 		}
+		@media #{$bp-small} {
+		      display: none !important;
+		}
 		&:hover {
 			cursor: pointer;
 		}
@@ -1265,6 +1268,9 @@ margin-bottom: 40px;
 		}
 		@media #{$bp-large} {
 			padding: 5px 0;
+		}
+		@media #{$bp-small} {
+		      display: none;
 		}
 		.flex-wrapp {
 			display: flex;
