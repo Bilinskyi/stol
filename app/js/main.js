@@ -1,6 +1,22 @@
 
 $(document).ready(function(){
 
+	$('.js-valf-1').on('click', function(e) {
+		e.preventDefault(); 
+		$('.js-val-forname-1').val($(this).attr('data-name-form1'));
+	});
+
+	$('.js-valf-2').on('click', function(e) {
+		e.preventDefault(); 
+		$('.js-val-forname-2').val($(this).attr('data-name-form1'));
+	});
+
+	$('.js-valf-3').on('click', function(e) {
+		e.preventDefault(); 
+		$('.js-val-forname-3').val($(this).attr('data-name-form1'));
+	});
+
+
 	$('.btn-menu').on('click', function(e) {
 		e.preventDefault(); 
 		$(this).closest('div').next().find('.nav').slideToggle();
@@ -112,7 +128,7 @@ $('.step-btn').on('click', function(e) {
 
 						scrollTop: $('#screen4').offset().top + 200}, 'slow');
 
-			});
+				});
 
 
 				if (th1.hasClass('next-5step')) {

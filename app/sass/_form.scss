@@ -90,6 +90,12 @@ input.error {
 	}
 	&.popup-form {
 		background-color: #fff;
+		&  .form-sm + form {
+			padding-top: 0;
+		}
+		.note {
+			margin-top: 15px;
+		}
 		@media #{$bp-small} {
 		      width: 100%;
 		}
