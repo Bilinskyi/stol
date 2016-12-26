@@ -12,13 +12,13 @@
 }
 
 @media #{$bp-large} {
-       ::-webkit-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
-  ::-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
-  :-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
-  :-ms-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+ ::-webkit-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+ ::-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+ :-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+ :-ms-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
 }
 @media #{$bp-medium} {
-            ::-webkit-input-placeholder {color: #4a4a4a;font-size: 8px;font-family: $normal;}
+  ::-webkit-input-placeholder {color: #4a4a4a;font-size: 8px;font-family: $normal;}
   ::-moz-placeholder {color: #4a4a4a;font-size: 8px;font-family: $normal;}
   :-moz-placeholder {color: #4a4a4a;font-size: 8px;font-family: $normal;}
   :-ms-input-placeholder {color: #4a4a4a;font-size: 8px;font-family: $normal;} 
@@ -29,6 +29,20 @@
 .popup-form :-moz-placeholder {color: rgba(74,74,74, .3);font-size: 14px;font-family: $normal;}
 .popup-form :-ms-input-placeholder {color: rgba(74,74,74, .3);font-size: 14px;font-family: $normal;}
 
+@media #{$bp-blarge} {
+  .popup-form ::-webkit-input-placeholder {color: rgba(74,74,74, .3);font-size: 12px;font-family: $normal;}
+  .popup-form ::-moz-placeholder {color: rgba(74,74,74, .3);font-size: 12px;font-family: $normal;}
+  .popup-form :-moz-placeholder {color: rgba(74,74,74, .3);font-size: 12px;font-family: $normal;}
+  .popup-form :-ms-input-placeholder {color: rgba(74,74,74, .3);font-size: 12px;font-family: $normal;}
+  
+}
+
+@media #{$bp-small} {
+  .popup-form ::-webkit-input-placeholder {color: rgba(74,74,74, .3);font-size: 10px;font-family: $normal;}
+  .popup-form ::-moz-placeholder {color: rgba(74,74,74, .3);font-size: 10px;font-family: $normal;}
+  .popup-form :-moz-placeholder {color: rgba(74,74,74, .3);font-size: 10px;font-family: $normal;}
+  .popup-form :-ms-input-placeholder {color: rgba(74,74,74, .3);font-size: 10px;font-family: $normal;}
+}
 
 .input-popup::-webkit-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
 .input-popup::-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
@@ -46,6 +60,19 @@
 .center-form :-moz-placeholder {color: #4a4a4a;font-size: 16px;font-family: $normal;}
 .center-form :-ms-input-placeholder {color: #4a4a4a;font-size: 16px;font-family: $normal;}
 
+@media #{$bp-large} {
+      .center-form ::-webkit-input-placeholder {color: #4a4a4a;font-size: 14px;font-family: $normal;}
+.center-form ::-moz-placeholder {color: #4a4a4a;font-size: 14px;font-family: $normal;}
+.center-form :-moz-placeholder {color: #4a4a4a;font-size: 14px;font-family: $normal;}
+.center-form :-ms-input-placeholder {color: #4a4a4a;font-size: 14px;font-family: $normal;}
+}
+
+ @media #{$bp-small} {
+             .center-form ::-webkit-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+.center-form ::-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+.center-form :-moz-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+.center-form :-ms-input-placeholder {color: #4a4a4a;font-size: 12px;font-family: $normal;}
+ }
 
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
@@ -112,4 +139,13 @@ ul {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+
+
+.visible-xs {
+  display: none;
+  @media #{$bp-small} {
+    display: block;
+  }
 }

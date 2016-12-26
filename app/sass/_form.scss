@@ -68,21 +68,49 @@ input.error {
 	@media #{$bp-medium} {
 	      padding: 30px 20px;
 	}
+	@media #{$bp-small} {
+	      text-align: center;
+	}
 	&.center-form {
 		margin-left: auto;
 		margin-right: auto;
+		text-align: center;
+		@media #{$bp-small} {
+		      max-width: 320px;
+		}
+		input {
+			font-size: 16px;
+			@media #{$bp-large} {
+			      font-size: 14px;
+			}
+			@media #{$bp-small} {
+			      font-size: 12px;
+			}
+		}
 	}
 	&.popup-form {
 		background-color: #fff;
+		@media #{$bp-small} {
+		      width: 100%;
+		}
 		form {
 			padding-top: 30px;
 			input {
 				color: #4a4a4a;
 				font-size: 14px;
+				@media #{$bp-blarge} {
+				      font-size: 12px;
+				}
+				@media #{$bp-small} {
+				      font-size: 10px;
+				}
 			}
 		}
 		.tabs-caption-call {
 			margin-bottom: 20px;
+			@media #{$bp-small} {
+			      margin-bottom: 10px;
+			}
 			li {
 				width: 50%;
 				float: left;
@@ -108,6 +136,9 @@ input.error {
 				display: block;
 				input {
 					margin: 0px 0 25px;
+					@media #{$bp-small} {
+					      margin-bottom: 10px;
+					}
 				}
 			}
 		}
@@ -212,6 +243,7 @@ line-height: 10px;
 		      height: 44px;
 		      font-size: 13px;
 		      margin-bottom: 15px;
+		      padding-left: 20px;
 		}
 		@media #{$bp-large} {
 		      height: 35px;
@@ -223,6 +255,10 @@ line-height: 10px;
 		      padding-left: 14px;
 		      font-size: 8px;
 		      height: 28px;
+		}
+		@media #{$bp-small} {
+		      text-align: center;
+		      padding: 0;
 		}
 	}
 }
