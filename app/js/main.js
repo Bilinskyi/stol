@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+	
 
 	$('.js-valf-1').on('click', function(e) {
 		e.preventDefault(); 
@@ -116,7 +117,15 @@ var bx6 = $('.bx-calc-2').bxSlider({
 });
 
 
+$(window).scroll(function() {
 
+	if ($(this).scrollTop() > 100) {
+		$('.nav').addClass('fixed');
+	} else {
+		$('.nav').removeClass('fixed');
+	}
+
+})
 $('.step-btn').on('click', function(e) {
 	e.preventDefault(); 
 
@@ -147,8 +156,45 @@ $('.step-btn').on('click', function(e) {
 	});
 
 
+$('.next-from-fancy').on('click', function(e) {
+	e.preventDefault();
+	$.fancybox.close();
+});
+
+$('.back-step').on('click', function(e) {
+	e.preventDefault(); 
+
+	var th1 = $(this);
+	th1.closest('.steps-all').animate({opacity: '0'}, 300, function() {
+		$(this).css('display', 'none').prev().css('display', 'block').animate({opacity: '1'}, 300, function() {
+			$('html,body').animate({ 
+
+				scrollTop: $('#screen4').offset().top + 200}, 'slow');
+
+		});
 
 
+		if (th1.hasClass('next-5step')) {
+			bx5.reloadSlider();
+		} else if (th1.hasClass('next-6step')) {
+			bx6.reloadSlider(); 
+		}
+
+
+	});
+
+});
+
+
+$('.fancybox').fancybox({
+	'hideOnContentClick': true,
+	fitToView: true,
+	maxWidth: '90%',
+	maxHeight: '90%',
+	openEffect: 'fade',
+	padding : 0,
+	margin: [0, 0, 50, 0]
+})
 
 
 
@@ -238,6 +284,8 @@ $(document).on('click', '.color-box', function(e) {
 	} else {
 		$('.js-color-2').val($(this).find('span').text());
 	}
+
+	$.fancybox.close();
 
 
 });
@@ -515,6 +563,22 @@ $(document).on('click', '.add-click', function(e) {
 
  $('.m-h-1, .m-h-2, .m-h-3, .top-photo .photo-box, .bottom-photo .photo-box, .map-height > div, .last-mh > div').matchHeight();
 
+
+ $(document).on('click', '.sec-img, .sec-partners', function(e) {
+ 	$('.section-2').find('li.active').removeClass('active');
+ 	$('.section-2').find('.absolute').animate({opacity: '0'}, 250, function() {
+ 		$(this).css('display', 'none');
+ 	}); 
+ });
+
+
+
+
+
+ $(document).on('click', '.section-2 li', function(event){
+ 	event.stopPropagation();
+ });
+
  $('.open-r').on('click', 'li:not(.active)', function(e) {
  	e.preventDefault(); 
  	$(this).closest('.section-2').find('.absolute').css({display: 'none', opacity: '0'});
@@ -531,17 +595,34 @@ $(document).on('click', '.add-click', function(e) {
 
  $('.close-abs').on('click', function(e) {
  	e.preventDefault(); 
- 	$(this).closest('.section-2').find('li.active').removeClass('active');
- 	$(this).closest('.absolute').animate({opacity: '0'}, 300, function() {
+ 	$('.section-2').find('li.active').removeClass('active');
+ 	$('.section-2').find('.absolute').animate({opacity: '0'}, 250, function() {
  		$(this).css('display', 'none');
  	}); 
  });
 
- $('.plus').on('click', function(e) {
- 	e.preventDefault(); 
- 	$(this).toggleClass('active');
- 	$(this).find('p').toggleClass('active'); 
- });
+
+
+
+
+
+
+ // $('.plus').on('click', function(e) {
+ // 	e.preventDefault(); 
+ // 	$(this).toggleClass('active');
+ // 	$(this).find('p').toggleClass('active'); 
+ // });
+
+ $('.plus').mouseenter(function() {
+ 	$(this).addClass('active');
+ 	$(this).find('p').addClass('active'); 
+ })
+
+ $('.plus').mouseleave(function() {
+ 	$(this).removeClass('active');
+ 	$(this).find('p').removeClass('active'); 
+ })
+
 
 
  $(document).on('click', '.link-show-more', function(e) {

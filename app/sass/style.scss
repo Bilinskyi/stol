@@ -219,6 +219,15 @@ header {
 		background-color: rgba(0,0,0, .3);
 		display: inline-block;
 		padding: 6px 0px;
+		@media #{$min-s} {
+			&.fixed {
+				position: fixed;
+				z-index: 100;
+				top: 10px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
 		@media #{$bp-blarge} {
 			padding: 2px 0 3px;
 		}
@@ -1211,6 +1220,11 @@ header {
 	text-align: center;
 	position: relative;
 	.r-side {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
 		.absolute {
 			right: 0;
 			top: 0;
@@ -1221,6 +1235,11 @@ header {
 		}
 	}
 	.l-side {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
 		.absolute {
 			left: 0;
 			top: 0;
@@ -1235,7 +1254,7 @@ header {
 		width: 50%;
 		height: 100%;
 		background-color: #fff;	
-		z-index: 1;
+		z-index: 2;
 		display: none;
 		opacity: 0;
 		@media #{$bp-small} {
@@ -1310,6 +1329,8 @@ header {
 		background-size: cover;
 		padding-top: 105px;
 		padding-bottom: 40px;
+		position: relative;
+		z-index: 2;
 		@media #{$bp-blarge} {
 			padding-top: 70px;
 			padding-bottom: 15px;
@@ -1384,11 +1405,9 @@ header {
 				padding-top: 90px;
 			}
 			@media #{$bp-medium} {
-				padding-top: 70px;
-			}
-			@media #{$bp-large} {
 				padding-top: 40px;
 			}
+			
 			&.text-r {
 				@media #{$bp-small} {
 					width: 270px;
@@ -1443,7 +1462,9 @@ header {
 				font-family: $semi;
 				margin-bottom: 100px;
 				position: relative;
-
+				&:hover {
+					cursor: pointer;
+				}
 				@media #{$bp-blarge} {
 					font-size: 11px;
 					letter-spacing: 0.96px;
@@ -1470,6 +1491,7 @@ header {
 				i {
 					display: inline-block;
 					position: absolute;
+					cursor: pointer;
 					top: 50%;
 					transform: translateY(-50%);
 				}
@@ -1482,6 +1504,7 @@ header {
 	
 	.sec-partners {
 		padding: 23px 0 20px;
+		position: relative;
 		background: #131313;
 		@media #{$bp-blarge} {
 			padding: 11px 0;
@@ -2400,23 +2423,23 @@ a:hover {
 				display: none;
 				position: relative;
 				.button {
-						position: absolute;
-						left: 0;
-						right: 0;
-						margin-left: auto;
-						margin-right: auto;
-						width: 273px;
-						bottom: 50px;
-						@media #{$bp-large} {
-						      bottom: 30px;
-						}
-						@media #{$bp-small} {
-							bottom: 25px;
-							width: 100%;
-							max-width: 200px;
-							height: 25px;
-							line-height: 25px;
-						}
+					position: absolute;
+					left: 0;
+					right: 0;
+					margin-left: auto;
+					margin-right: auto;
+					width: 273px;
+					bottom: 50px;
+					@media #{$bp-large} {
+						bottom: 30px;
+					}
+					@media #{$bp-small} {
+						bottom: 25px;
+						width: 100%;
+						max-width: 200px;
+						height: 25px;
+						line-height: 25px;
+					}
 				}
 				&.active {
 					display: block;
@@ -2443,7 +2466,7 @@ a:hover {
 		position: absolute;
 		left: 45px;
 		@media #{$bp-blarge} {
-			left: 30px;
+			left: 15px;
 		}
 		@media #{$bp-large} {
 			left: 15px;
@@ -2747,10 +2770,20 @@ a:hover {
 			li {
 				float: left;
 			}
+			.item {
+				a {
+					display: inline-block;
+					text-decoration: none;
+					&:not(:first-child) {
+						display: none;
+					}
+				}
+			}
 			img {
 				display: inline-block;
 				max-width: 100%;
 				height: auto;
+				max-height: 100%;
 			}
 		}
 
@@ -3430,16 +3463,16 @@ a:hover {
 			margin: 0;
 		}
 		@media #{$bp-small} {
-		      padding-bottom: 20px;
+			padding-bottom: 20px;
 		}
 		.manufacturer-item {
 			width: 20%;
 			float: left;
 			padding: 0 15px;
 			@media #{$bp-small} {
-			      width: 50%;
-			      padding: 0 8px;
-			      margin-bottom: 5px;
+				width: 50%;
+				padding: 0 8px;
+				margin-bottom: 5px;
 			}
 			.man-box {
 				border: 1px solid #f2f2f2;
@@ -3526,9 +3559,9 @@ a:hover {
 				width: 30%;
 			}
 			@media #{$bp-small} {
-			      width: 100%;
-			      margin: 5px 0;
-			      max-width: 320px;
+				width: 100%;
+				margin: 5px 0;
+				max-width: 320px;
 			}
 			span {
 				color: black;
@@ -3814,19 +3847,19 @@ a:hover {
 			top: 0;
 			top: 90px;
 			@media #{$bp-small} {
-			      width: 30px;
-			      height: 30px;
-			      border-width: 2px;
+				width: 30px;
+				height: 30px;
+				border-width: 2px;
 			}
 			i {
 				@media #{$bp-small} {
-				      font-size: 13px;
+					font-size: 13px;
 				}
 			}
 			i:before {
 				@media #{$bp-small} {
-				      
-				      line-height: 27px;
+					
+					line-height: 27px;
 				}
 			}
 		}
@@ -3844,8 +3877,8 @@ a:hover {
 				margin-bottom: 10px;
 			}
 			@media #{$bp-small} {
-			      margin-left: 0;
-			      margin-right: auto;
+				margin-left: 0;
+				margin-right: auto;
 			}
 			.img-wrapp-6 {
 				border: 1px solid #eee;
@@ -3906,7 +3939,7 @@ a:hover {
 		.margin-step-4-input {
 			margin: 14px 0 30px;
 			@media #{$bp-medium} {
-			      margin: 10px 0;
+				margin: 10px 0;
 			}
 		}
 		.steps-slider {
@@ -4014,7 +4047,7 @@ a:hover {
 					width: 45%;
 				}
 				@media #{$bp-small} {
-				      width: 100%;
+					width: 100%;
 				}
 				.justify-c {
 					margin: 10px 0;
@@ -4071,7 +4104,7 @@ a:hover {
 				margin-left: auto;
 				margin-right: auto;
 				@media #{$bp-medium} {
-				      bottom: -50px;
+					bottom: -50px;
 				}
 			}
 		}
@@ -4094,7 +4127,7 @@ a:hover {
 				padding: 20px;
 			}
 			@media #{$bp-small} {
-			      width: 100%;
+				width: 100%;
 			}
 			.add-click {
 				margin: 7px 0;
@@ -4116,7 +4149,7 @@ a:hover {
 				padding: 20px;
 			}
 			@media #{$bp-small} {
-			      width: 100%;
+				width: 100%;
 			}
 			.add-click {
 				margin: 7px 0;
@@ -4142,32 +4175,32 @@ a:hover {
 		left: 50px;
 		top: 50px;
 		@media #{$bp-large} {
-		      left: 0px;
-		      top: 15px;
+			left: 0px;
+			top: 15px;
 		}
 	}
 	&.r-2 {
 		right: 50px;
 		top: 50px;
 		@media #{$bp-large} {
-		      right: 0px;
-		      top: 15px;
+			right: 0px;
+			top: 15px;
 		}
 	}
 	&.r-3 {
 		right: 50px;
 		bottom: 50px;
 		@media #{$bp-large} {
-		      right: 0px;
-		      bottom: 15px;
+			right: 0px;
+			bottom: 15px;
 		}
 	}
 	&.r-4 {
 		bottom: 50px;
 		left: 50px;
 		@media #{$bp-large} {
-		      left: 0;
-		      bottom: 15px;
+			left: 0;
+			bottom: 15px;
 		}
 	}
 }
@@ -4191,10 +4224,10 @@ a:hover {
 			height: 100px;
 			transition: .15s;
 			@media #{$bp-large} {
-			      width: 50px;
+				width: 50px;
 			}
 			@media #{$bp-small} {
-			      width: 30px;
+				width: 30px;
 			}
 		}
 		&:before {
@@ -4210,10 +4243,10 @@ a:hover {
 			height: 100px;
 			transition: .15s;
 			@media #{$bp-large} {
-			      width: 50px;
+				width: 50px;
 			}
 			@media #{$bp-small} {
-			      width: 30px;
+				width: 30px;
 			}
 		}
 		&.border-r-b-neg {
@@ -4237,10 +4270,10 @@ a:hover {
 			height: 100px;
 			transition: .15s;
 			@media #{$bp-large} {
-			      width: 50px;
+				width: 50px;
 			}
 			@media #{$bp-small} {
-			      width: 30px;
+				width: 30px;
 			}
 		}
 		&:before {
@@ -4256,10 +4289,10 @@ a:hover {
 			height: 100px;
 			transition: .15s;
 			@media #{$bp-large} {
-			      width: 50px;
+				width: 50px;
 			}
 			@media #{$bp-small} {
-			      width: 30px;
+				width: 30px;
 			}
 			
 		}
@@ -4330,7 +4363,7 @@ a:hover {
 	min-height: 100%;
 	padding: 20px 30px 60px;
 	@media #{$bp-small} {
-	          padding: 20px 0px 60px 0px;
+		padding: 20px 0px 60px 0px;
 	}
 	.radius-top-left {
 		transition: .15s;
@@ -4365,16 +4398,16 @@ a:hover {
 		font-family: $f;
 		padding-left: 130px;
 		@media #{$bp-small} {
-		      padding-left: 10px;
+			padding-left: 10px;
 		}
 	}
 	.shape-allclass-draw {
 		padding-left: 130px;
 		@media #{$bp-medium} {
-		      padding-left: 70px;
+			padding-left: 70px;
 		}
 		@media #{$bp-medium} {
-		      padding-left: 40px;
+			padding-left: 40px;
 		}
 		.shape-after-title {
 			margin-top: 80px;
@@ -4385,7 +4418,7 @@ a:hover {
 			width: 70%;
 			height: 270px;
 			@media #{$bp-medium} {
-			      width: 100%;
+				width: 100%;
 			}
 			.height {
 				height: 270px;
@@ -4465,8 +4498,8 @@ a:hover {
 					bottom: 50px;
 					right: 50px;
 					@media #{$bp-large} {
-					      bottom: 15px;
-					      right: 0;
+						bottom: 15px;
+						right: 0;
 					}
 				}
 				.round-4 {
@@ -4474,8 +4507,8 @@ a:hover {
 					bottom: 50px;
 					left: 50px;
 					@media #{$bp-large} {
-					      bottom: 15px;
-					      left: 0;
+						bottom: 15px;
+						left: 0;
 					}
 				}
 			}
@@ -4501,7 +4534,7 @@ a:hover {
 			width: 50px;
 			position: absolute;
 			@media #{$bp-small} {
-			      width: 25px;
+				width: 25px;
 			}
 			&:after {
 				content: '';
@@ -4523,7 +4556,7 @@ a:hover {
 				input {
 					left: -30px;
 					@media #{$bp-small} {
-					      left: 0px;
+						left: 0px;
 					}
 				}
 			}
@@ -4534,7 +4567,7 @@ a:hover {
 				input {
 					right: -30px;
 					@media #{$bp-small} {
-					      right: 0;
+						right: 0;
 					}
 				}
 			}
@@ -4549,7 +4582,7 @@ a:hover {
 				left: 0;
 				right: 0;
 				@media #{$bp-small} {
-				      width: 25px;
+					width: 25px;
 				}
 				&:after {
 					content: '';
@@ -4577,7 +4610,7 @@ a:hover {
 				left: 0;
 				right: 0;
 				@media #{$bp-small} {
-				      width: 25px;
+					width: 25px;
 				}
 				&:after {
 					content: '';
@@ -4608,7 +4641,7 @@ a:hover {
 				transform: translateY(-50%);
 				border: 1px solid rgb(226, 226, 226);
 				@media #{$bp-small} {
-				      width: 45px;
+					width: 45px;
 				}
 			}
 		}
@@ -4619,7 +4652,7 @@ a:hover {
 			bottom: 100%;
 			margin-bottom: 10px;
 			@media #{$bp-small} {
-			      height: 25px;
+				height: 25px;
 			}
 			&.width-bottom {
 				bottom: auto;
@@ -4654,7 +4687,7 @@ a:hover {
 				top: 0;
 				left: 0;
 				@media #{$bp-small} {
-				      height: 25px;
+					height: 25px;
 				}
 				&:after {
 					content: '';
@@ -4677,7 +4710,7 @@ a:hover {
 				right: 0;
 				top: 0;
 				@media #{$bp-small} {
-				      height: 25px;
+					height: 25px;
 				}
 				&:after {
 					content: '';
@@ -4706,7 +4739,7 @@ a:hover {
 				transform: translateY(-50%);
 				border: 1px solid rgb(226, 226, 226);
 				@media #{$bp-small} {
-				      width: 45px;
+					width: 45px;
 				}
 			}
 		}
@@ -4718,20 +4751,20 @@ a:hover {
 			width: 50%;
 			float: left;
 			@media #{$bp-small} {
-			      width: 100%;
-			      margin-left: 0;
-			      margin-right: auto;
-			      padding-left: 0;
-			      padding-right: 0;
+				width: 100%;
+				margin-left: 0;
+				margin-right: auto;
+				padding-left: 0;
+				padding-right: 0;
 			}
 			.left-shape {
 				width: 51%;
 				margin: 0 0 0 30% !important;
 				float: left !important;
 				@media #{$bp-small} {
-			      width: 100%;
-			      margin: 0 !important;
-			}
+					width: 100%;
+					margin: 0 !important;
+				}
 				&:first-child {
 					margin-bottom: 20px !important;
 				}
@@ -4742,10 +4775,10 @@ a:hover {
 			float: left;
 			position: relative;
 			@media #{$bp-medium} {
-			      width: 40%;
+				width: 40%;
 			}
 			@media #{$bp-small} {
-			      width: 70%;
+				width: 70%;
 			}
 			&:after {
 				content: '';
@@ -4834,10 +4867,10 @@ a:hover {
 	padding: 20px 0px 20px 135px;
 	position: relative;
 	@media #{$bp-medium} {
-	      padding-left: 60px;
+		padding-left: 60px;
 	}
 	@media #{$bp-small} {
-	      padding-left: 15px;
+		padding-left: 15px;
 	}
 	
 	.page-popup {
@@ -4863,7 +4896,7 @@ a:hover {
 	.bx-wrapper {
 		padding-right: 120px;
 		@media #{$bp-medium} {
-		      padding-right: 70px;
+			padding-right: 70px;
 		}
 		li {
 			overflow: hidden;
@@ -4876,7 +4909,7 @@ a:hover {
 		transform: translateY(-50%);
 		margin-top: -15px;
 		@media #{$bp-medium} {
-		      right: 12px;
+			right: 12px;
 		}
 		a {
 			display: block;
@@ -4899,7 +4932,7 @@ a:hover {
 		// padding: 0 15px;
 		text-align: center;
 		@media #{$bp-medium} {
-		      width: 20%;
+			width: 20%;
 		}
 		.color-box {
 			display: inline-block;
@@ -5680,6 +5713,13 @@ footer {
 .fancybox-close {
 	@media #{$bp-small} {
 		right: 0 !important;
+	}
+}
+
+
+.center {
+	.button {
+		margin: 0 10px;
 	}
 }
 

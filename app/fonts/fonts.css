@@ -35,22 +35,33 @@
 }
 
 
+
 @font-face {
-  font-family: 'Conv_Solomon Sans Normal';
-  src: url('Solomon Sans Normal.eot');
-  src: local('☺'), url('Solomon Sans Normal.woff') format('woff'), url('Solomon Sans Normal.ttf') format('truetype'), url('Solomon Sans Normal.svg') format('svg');
+  font-family: 'Solomon-Sans-Normal';
+  src: url('Solomon-Sans-Normal.eot');
+  src: url('Solomon-Sans-Normal.woff2') format('woff2'),
+       url('Solomon-Sans-Normal.woff') format('woff'),
+       url('Solomon-Sans-Normal.ttf') format('truetype'),
+       url('Solomon-Sans-Normal.svg#Solomon-Sans-Normal') format('svg'),
+       url('Solomon-Sans-Normal.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Solomon-Sans-SemiBold';
+  src: url('Solomon-Sans-SemiBold.eot');
+  src: url('Solomon-Sans-SemiBold.woff2') format('woff2'),
+       url('Solomon-Sans-SemiBold.woff') format('woff'),
+       url('Solomon-Sans-SemiBold.ttf') format('truetype'),
+       url('Solomon-Sans-SemiBold.svg#Solomon-Sans-SemiBold') format('svg'),
+       url('Solomon-Sans-SemiBold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 
-@font-face {
-  font-family: 'Conv_Solomon Sans SemiBold';
-  src: url('Solomon Sans SemiBold.eot');
-  src: local('☺'), url('Solomon Sans SemiBold.woff') format('woff'), url('Solomon Sans SemiBold.ttf') format('truetype'), url('Solomon Sans SemiBold.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 
 @font-face {

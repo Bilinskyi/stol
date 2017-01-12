@@ -1,6 +1,11 @@
 input:not([type=submit]) {
 
 }
+#shape-1 {
+	.next-from-fancy {
+		margin-top: 30px !important;
+	}
+}
 
 .button {
 	display: inline-block;
@@ -18,6 +23,10 @@ input:not([type=submit]) {
 	letter-spacing: 1.23px;
 	font-family: $normal;
 	text-transform: uppercase;
+	&.next-from-fancy {
+		padding: 0 40px;
+	margin-top: 70px !important;	
+	}
 	@media #{$bp-blarge} {
 	      height: 44px;
 	      line-height: 44px;
@@ -129,6 +138,9 @@ input.error {
 				text-transform: uppercase;
 				text-align: center;
 				color: #9d9d9d;
+				&:hover {
+					cursor: pointer;
+				}
 				&.active {
 					background-color: #d1b38c;
 					color: #fff;
