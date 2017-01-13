@@ -4858,6 +4858,12 @@ a:hover {
 	background-size: 59px 59px;		
 	z-index: 2;
 	cursor: pointer;
+	&.js-close-draw {
+		left: 50%;
+		right: auto;
+		transform: translateX(-50%);
+		margin-left: -8px;
+	}
 }
 
 .all-color-bg {
@@ -5717,9 +5723,13 @@ footer {
 }
 
 
-.center {
+.steps-all {
 	.button {
-		margin: 0 10px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }
 
+.fancybox-inner {
+	overflow-X: hidden !important;
+}

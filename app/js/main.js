@@ -24,6 +24,7 @@ $(document).ready(function(){
 	});
 
 
+
 	var flag = true;
 	var flag2 = true;
 	var note2 = $('.note-2');
@@ -208,6 +209,7 @@ $(".various-modal").fancybox({
 	openEffect: 'fade',
 	padding : 0,
 	margin: [0, 0, 50, 0],
+	scrolling: 'yes',
 	helpers     : { 
 		overlay : {closeClick: false}
 	},
@@ -249,14 +251,22 @@ $(".various").fancybox({
 	openEffect: 'fade',
 	padding : 0,
 	margin: [0, 0, 50, 0],
+	// scrolling: 'yes',
+	scrolling: 'yes',
 	helpers     : { 
-		overlay : {closeClick: false}
+		overlay: {
+			closeClick: false
+            }
 	},
 	tpl: {
-		closeBtn : '<div class="close-abs-2"></div>'
-	},
+		closeBtn : '<div class="close-abs-2 js-close-draw"></div>'
+	}
 });
 
+	// $('.js-close-draw').on('click', function(e) {
+	//  e.preventDefault(); 
+	//  $.fancybox.close();
+	// });
 
 $(document).on('click', '.man-box', function(e) {
 	e.preventDefault(); 
