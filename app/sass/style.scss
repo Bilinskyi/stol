@@ -4937,8 +4937,17 @@ a:hover {
 		float: left;
 		// padding: 0 15px;
 		text-align: center;
+		&:nth-child(10n+1) {
+			clear: left;
+		}
 		@media #{$bp-medium} {
 			width: 20%;
+			&:nth-child(10n+1) {
+				clear: none;
+			}
+			&:nth-child(5n+1) {
+				clear: left;
+			}
 		}
 		.color-box {
 			display: inline-block;
@@ -4952,6 +4961,11 @@ a:hover {
 			height: 102px;
 			max-width: 100%;
 			height: auto;
+			&.color-1 {
+				span {
+					color: #da1616;
+				}
+			}
 			&:hover,
 			&.active {
 				border: 4px solid rgb(209, 179, 140);
@@ -5732,4 +5746,24 @@ footer {
 
 .fancybox-inner {
 	overflow-X: hidden !important;
+}
+
+.up {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	z-index: 10;
+	display: none;
+	&.fixed {
+		display: block;
+	}
+	i {
+		cursor: pointer;
+		display: inline-block;
+		color: #ff8c00;
+		font-size: 50px;
+		&:hover {
+			color: #d28528;
+		}
+	}
 }

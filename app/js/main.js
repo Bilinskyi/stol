@@ -126,7 +126,24 @@ $(window).scroll(function() {
 		$('.nav').removeClass('fixed');
 	}
 
+	if ($(this).scrollTop() > 500) {
+		$('.up').addClass('fixed');
+	} else {
+		$('.up').removeClass('fixed');
+	}
+
 })
+
+
+$('.up').on('click', function(e) {
+	e.preventDefault();
+
+	$('html, body').animate({
+		scrollTop: 0
+	}, 500);
+
+});
+
 $('.step-btn').on('click', function(e) {
 	e.preventDefault(); 
 
